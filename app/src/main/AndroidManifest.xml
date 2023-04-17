@@ -21,7 +21,8 @@
         android:requestLegacyExternalStorage="true"
         android:appComponentFactory="whateverString"
         tools:replace="android:appComponentFactory"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        android:enableOnBackInvokedCallback="true">
 
         <activity
             android:name=".Register"

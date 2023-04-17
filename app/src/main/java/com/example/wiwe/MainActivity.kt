@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AlertDialog
 import com.example.wiwe.databinding.ActivityMainBinding
-import com.google.firebase.messaging.FirebaseMessaging
+
 import okhttp3.OkHttpClient
 import retrofit2.Call
 import retrofit2.Callback
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         actionBar?.hide()
 
         var retrofit = Retrofit.Builder()
-            .baseUrl("http://15.164.60.202:8080")//서버주소 작성
+            .baseUrl("http://15.164.60.202:8080/")//서버주소 작성
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 

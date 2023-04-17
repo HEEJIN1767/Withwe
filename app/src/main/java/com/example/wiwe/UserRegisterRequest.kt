@@ -1,10 +1,13 @@
 package com.example.wiwe
 
 public final data class UserRegisterRequest(
-    val name: String,
-    val nickname: String,
+
+    val username: String,
     val password: String,
-    val username: String
+    val name: String,
+    val nickname: String
+
+
 
     //  @Field("name") name: String,
     //  @Field("nickname") nickname: String,

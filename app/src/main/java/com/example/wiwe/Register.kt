@@ -38,7 +38,7 @@ class Register : AppCompatActivity() {
             .writeTimeout(10, TimeUnit.SECONDS).build()
 
         var retrofit = Retrofit.Builder()
-            .baseUrl("http://15.164.60.202:8080")//서버주소 작성
+            .baseUrl("http://15.164.60.202:8080/")//서버주소 작성
                 //데이터를 자동으로 컨버팅하기위한 gsonfactory사용
             .addConverterFactory(GsonConverterFactory.create())
             //.build()
@@ -56,7 +56,7 @@ class Register : AppCompatActivity() {
             val nickname = binding.retNick.text.toString()//닉네임
 
 
-            val data = UserRegisterRequest(username,name, password, nickname)
+            val data = UserRegisterRequest(username,password,name,  nickname)
             Service.register(data)
                 .enqueue(object : Callback<RigisterResponse> {
 
@@ -64,16 +64,22 @@ class Register : AppCompatActivity() {
                         call: Call<RigisterResponse>,
                         response: Response<RigisterResponse>
                     ) {
+                        if (response.isSuccessful) {
 
-                        //val result = response.body()
-                        //Log.e("회원가입 ", "${result}")
-                        Log.e("회원가입 ", "성공")
-                        val intent = Intent(this@Register, MainActivity::class.java)
-                        startActivity(intent)
+                            //val result = response.body()
+                            //Log.e("회원가입 ", "${result}")
+                            Log.e("회원가입 ", "성공")
+                            val intent = Intent(this@Register, MainActivity::class.java)
+                            startActivity(intent)
+                        } else {
+                            Log.d("회원가입", "실패")
+                            Toast.makeText(this@Register, "아이디나 비밀번호를 확인해주세요", Toast.LENGTH_SHORT)
+                                .show()
+                        }
                     }
 
                     override fun onFailure(call: Call<RigisterResponse>, t: Throwable) {
-                        Log.e("회원가입 실패", t.message.toString())
+                        Log.e("연결 실패", t.message.toString())
                     }
 
                 })
