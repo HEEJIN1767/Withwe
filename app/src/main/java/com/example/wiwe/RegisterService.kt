@@ -8,11 +8,13 @@ interface RegisterService {
 
     @FormUrlEncoded
     @POST("/auth/signup")
+    @Headers("content-type: application/json", "accept: application/json")
     fun register(
-        @Field("name") name: String,
-        @Field("nickname") nickname: String,
-        @Field("password") password: String,
-        @Field("username") username: String
+        @Body request: UserRegisterRequest
+        //  @Field("name") name: String,
+      //  @Field("nickname") nickname: String,
+        // @Field("password") password: String,
+       // @Field("username") username: String
 
     ): Call<RigisterResponse>
 }

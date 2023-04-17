@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import com.example.wiwe.databinding.ActivityRegisterBinding
 import okhttp3.OkHttpClient
 import retrofit2.Call
@@ -16,18 +17,21 @@ import java.util.concurrent.TimeUnit
 
 class Register : AppCompatActivity() {
 
-    private lateinit var binding: ActivityRegisterBinding
-
+    val TAG: String = "Register"
     var isExistBlank = false
     var isPWSame = false
 
+    private lateinit var binding: ActivityRegisterBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+        //타이틀 숨기기
+        var actionBar: ActionBar?
+        actionBar = supportActionBar
+        actionBar?.hide()
 
         val client = OkHttpClient.Builder().connectTimeout(1, TimeUnit.MINUTES)
             .readTimeout(10, TimeUnit.SECONDS)
@@ -42,17 +46,18 @@ class Register : AppCompatActivity() {
 
         var Service = retrofit.create(RegisterService::class.java)
 
-        val btn_register = binding.btnRegister
 
-        btn_register.setOnClickListener {
-            val name = binding.retId.text.toString()
-            val password = binding.retPw.text.toString()
-            val passwordcheck = binding.retPw2.text.toString()
-            val nickname = binding.etNick.text.toString()
-            val username = binding.etBirth.text.toString()
+        binding.btnRegister.setOnClickListener {
+            Log.d(TAG, "회원가입 버튼 클릭")
+            val username = binding.retId.text.toString()//아이디
+            val name = binding.retUsername.text.toString()//이름
+            val password = binding.retPw.text.toString()//비밀번호
+            val passwordcheck = binding.retPw2.text.toString()//비밀번호 확인
+            val nickname = binding.retNick.text.toString()//닉네임
 
 
-            Service.register(name, password, nickname, username)
+            val data = UserRegisterRequest(username,name, password, nickname)
+            Service.register(data)
                 .enqueue(object : Callback<RigisterResponse> {
 
                     override fun onResponse(
@@ -60,8 +65,9 @@ class Register : AppCompatActivity() {
                         response: Response<RigisterResponse>
                     ) {
 
-                        val result = response.body()
-                        Log.e("회원가입 성공", "${result}")
+                        //val result = response.body()
+                        //Log.e("회원가입 ", "${result}")
+                        Log.e("회원가입 ", "성공")
                         val intent = Intent(this@Register, MainActivity::class.java)
                         startActivity(intent)
                     }
@@ -72,26 +78,27 @@ class Register : AppCompatActivity() {
 
                 })
 
-            if (name.isEmpty() || password.isEmpty() || passwordcheck.isEmpty() || nickname.isEmpty() || username.isEmpty()) {
-                isExistBlank = true
 
+            if (name.isEmpty() || password.isEmpty() || passwordcheck.isEmpty() || nickname.isEmpty()|| username.isEmpty()) {
+                isExistBlank = true
+                Log.d("빈칸", "있음")
                 Toast.makeText(this@Register, "빈칸을 작성해주세요.", Toast.LENGTH_SHORT).show()
             } else {
 
                 binding.pwch.setOnClickListener {
                     if (password == passwordcheck) {//비밀번호 확인 -비밀번호가 일치하면
                         isPWSame = true
-
+                        Log.d("비밀번호", "일치")
                         Toast.makeText(this@Register, "비밀번호가 일치합니다.", Toast.LENGTH_SHORT).show()
                     } else {
+                        Log.d("비밀번호", "불일치")
                         Toast.makeText(this@Register, "비밀번호가 일치하지않습니다.", Toast.LENGTH_SHORT).show()
                     }
-
                 }
 
+
+
             }
-
-
         }
     }
 }
