@@ -1,7 +1,6 @@
 package com.example.wiwe
 
 public final data class UserRegisterRequest(
-
     val username: String,
     val password: String,
     val name: String,
@@ -9,7 +8,10 @@ public final data class UserRegisterRequest(
 
 
 
-    //  @Field("name") name: String,
+    //  @Field("name") name: String, val username: String,
+    //    val password: String,
+    //    val name: String,
+    //    val nickname: String
     //  @Field("nickname") nickname: String,
     // @Field("password") password: String,
     // @Field("username") username: String

@@ -18,8 +18,6 @@ import java.util.concurrent.TimeUnit
 class Register : AppCompatActivity() {
 
     val TAG: String = "Register"
-    var isExistBlank = false
-    var isPWSame = false
 
     private lateinit var binding: ActivityRegisterBinding
 
@@ -39,7 +37,7 @@ class Register : AppCompatActivity() {
 
         var retrofit = Retrofit.Builder()
             .baseUrl("http://15.164.60.202:8080/")//서버주소 작성
-                //데이터를 자동으로 컨버팅하기위한 gsonfactory사용
+            //데이터를 자동으로 컨버팅하기위한 gsonfactory사용
             .addConverterFactory(GsonConverterFactory.create())
             //.build()
             .client(client).build()
@@ -52,11 +50,10 @@ class Register : AppCompatActivity() {
             val username = binding.retId.text.toString()//아이디
             val name = binding.retUsername.text.toString()//이름
             val password = binding.retPw.text.toString()//비밀번호
-            val passwordcheck = binding.retPw2.text.toString()//비밀번호 확인
             val nickname = binding.retNick.text.toString()//닉네임
 
 
-            val data = UserRegisterRequest(username,password,name,  nickname)
+            val data = UserRegisterRequest( username,password, name, nickname)
             Service.register(data)
                 .enqueue(object : Callback<RigisterResponse> {
 
@@ -64,47 +61,23 @@ class Register : AppCompatActivity() {
                         call: Call<RigisterResponse>,
                         response: Response<RigisterResponse>
                     ) {
-                        if (response.isSuccessful) {
-
-                            //val result = response.body()
-                            //Log.e("회원가입 ", "${result}")
-                            Log.e("회원가입 ", "성공")
-                            val intent = Intent(this@Register, MainActivity::class.java)
-                            startActivity(intent)
-                        } else {
-                            Log.d("회원가입", "실패")
-                            Toast.makeText(this@Register, "아이디나 비밀번호를 확인해주세요", Toast.LENGTH_SHORT)
-                                .show()
-                        }
+                            if (response.isSuccessful) {
+                                Log.e("회원가입 ", "성공")
+                                var intent = Intent(this@Register, MainActivity::class.java)
+                                startActivity(intent)
+                            } else {
+                                Log.d("회원가입", "실패")
+                                Toast.makeText(this@Register, "아이디가 중복되었습니다", Toast.LENGTH_SHORT)
+                                    .show()
+                            }
                     }
-
                     override fun onFailure(call: Call<RigisterResponse>, t: Throwable) {
                         Log.e("연결 실패", t.message.toString())
                     }
-
                 })
-
-
-            if (name.isEmpty() || password.isEmpty() || passwordcheck.isEmpty() || nickname.isEmpty()|| username.isEmpty()) {
-                isExistBlank = true
-                Log.d("빈칸", "있음")
-                Toast.makeText(this@Register, "빈칸을 작성해주세요.", Toast.LENGTH_SHORT).show()
-            } else {
-
-                binding.pwch.setOnClickListener {
-                    if (password == passwordcheck) {//비밀번호 확인 -비밀번호가 일치하면
-                        isPWSame = true
-                        Log.d("비밀번호", "일치")
-                        Toast.makeText(this@Register, "비밀번호가 일치합니다.", Toast.LENGTH_SHORT).show()
-                    } else {
-                        Log.d("비밀번호", "불일치")
-                        Toast.makeText(this@Register, "비밀번호가 일치하지않습니다.", Toast.LENGTH_SHORT).show()
-                    }
-                }
-
-
-
             }
         }
     }
-}
+
+
+
