@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/together"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:text="WiWe"
+        android:background="#54bebb"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="80dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="제목"/>
+
+            <EditText
+                android:id="@+id/title_et"
+                android:padding="16dp"
+                android:background="#eeeeee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="제목을 입력하세요."
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="내용"/>
+
+        <EditText
+            android:id="@+id/content_et"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#eeeeee"
+            android:hint="내용을 입력하세요."
+            />
+
+        <Button
+            android:id="@+id/change_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="수정하기"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#54bebb"/>
+
+
+    </LinearLayout>
+</LinearLayout>

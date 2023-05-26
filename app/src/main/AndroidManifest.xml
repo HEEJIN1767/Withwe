@@ -24,6 +24,61 @@
         tools:replace="android:appComponentFactory"
         tools:targetApi="31">
         <activity
+            android:name=".ChagneMemo"
+            android:exported="false" />
+        <activity
+            android:name=".OnewMemo"
+            android:exported="false" />
+        <activity
+            android:name=".MemoList"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarList"
+            android:exported="false"
+            android:label="@string/title_activity_calendar_list" />
+        <activity
+            android:name=".CreateCal"
+            android:exported="false" />
+        <activity
+            android:name=".Calendar"
+            android:exported="false" />
+        <activity
+            android:name=".Deleteuser"
+            android:exported="false" />
+        <activity
+            android:name=".passchange"
+            android:exported="false" />
+        <activity
+            android:name=".nickchange"
+            android:exported="false" />
+        <activity
+            android:name=".Userinfochange"
+            android:exported="false" />
+        <activity
+            android:name=".Myreview"
+            android:exported="false" />
+        <activity
+            android:name=".Myboards"
+            android:exported="false" />
+        <activity
+            android:name=".Mypage"
+            android:exported="false" />
+        <activity
+            android:name=".SearchCommunity"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeCommunity"
+            android:exported="false" />
+        <activity
+            android:name=".writecommunity"
+            android:exported="false" />
+        <activity
+            android:name=".Searchcommunity"
+            android:exported="false" />
+        <activity
+            android:name=".readcommunity"
+            android:exported="false" />
+        <activity
             android:name=".Recyclerviewcommunity"
             android:exported="false" />
         <activity

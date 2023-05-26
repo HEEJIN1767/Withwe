@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
+import com.example.wiwe.Api.Request.RegisterService
+import com.example.wiwe.Api.Request.UserRegisterRequest
 import com.example.wiwe.databinding.ActivityRegisterBinding
 import okhttp3.OkHttpClient
 import retrofit2.Call
@@ -18,7 +20,7 @@ import java.util.concurrent.TimeUnit
 class Register : AppCompatActivity() {
 
     val TAG: String = "Register"
-
+    var isExistBlank = false
     private lateinit var binding: ActivityRegisterBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +29,7 @@ class Register : AppCompatActivity() {
         setContentView(binding.root)
 
         //타이틀 숨기기
-        var actionBar: ActionBar?
+        val actionBar: ActionBar?
         actionBar = supportActionBar
         actionBar?.hide()
 
@@ -35,14 +37,12 @@ class Register : AppCompatActivity() {
             .readTimeout(10, TimeUnit.SECONDS)
             .writeTimeout(10, TimeUnit.SECONDS).build()
 
-        var retrofit = Retrofit.Builder()
-            .baseUrl("http://15.164.60.202:8080/")//서버주소 작성
-            //데이터를 자동으로 컨버팅하기위한 gsonfactory사용
-            .addConverterFactory(GsonConverterFactory.create())
-            //.build()
+        val retrofit = Retrofit.Builder()
+            .baseUrl("http://13.209.135.53:8080/")//서버주소 작성
+            .addConverterFactory(GsonConverterFactory.create())//데이터를 자동으로 컨버팅하기위한 gsonfactory사용
             .client(client).build()
 
-        var Service = retrofit.create(RegisterService::class.java)
+        val Service = retrofit.create(RegisterService::class.java)
 
 
         binding.btnRegister.setOnClickListener {
@@ -61,15 +61,23 @@ class Register : AppCompatActivity() {
                         call: Call<RigisterResponse>,
                         response: Response<RigisterResponse>
                     ) {
-                            if (response.isSuccessful) {
-                                Log.e("회원가입 ", "성공")
-                                var intent = Intent(this@Register, MainActivity::class.java)
-                                startActivity(intent)
+                        if (response.isSuccessful) {
+                            Log.e("회원가입 ", "성공")
+                            Toast.makeText(this@Register, "회원가입 성공", Toast.LENGTH_SHORT).show()
+                            val intent = Intent(this@Register, MainActivity::class.java)
+                            startActivity(intent)
+                        } else {
+                            if (username.isEmpty() || name.isEmpty() || password.isEmpty() || nickname.isEmpty()) {
+                                isExistBlank = true
+                                Log.d("빈칸", "있음")
+                                Toast.makeText(this@Register, "빈칸을 작성해주세요.", Toast.LENGTH_SHORT).show()
+
                             } else {
                                 Log.d("회원가입", "실패")
                                 Toast.makeText(this@Register, "아이디가 중복되었습니다", Toast.LENGTH_SHORT)
                                     .show()
                             }
+                        }
                     }
                     override fun onFailure(call: Call<RigisterResponse>, t: Throwable) {
                         Log.e("연결 실패", t.message.toString())

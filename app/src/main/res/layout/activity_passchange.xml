@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".passchange">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:text="WiWe"
+            android:background="#54bebb"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="80dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:background="#D3D3D3"
+                android:text="비밀번호 변경"
+                android:padding="16dp"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp">
+
+
+            <TextView
+                android:id="@+id/id"
+                android:text="PASS\nWORD"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/recentpass_ET"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:ems="20"
+                android:inputType="textPassword"
+                android:hint="기존 비밀번호를 입력해주세요."
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/paaword"
+                android:text="PASS\nWORD"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+            <EditText
+                android:id="@+id/newpass_ET"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:ems="20"
+                android:inputType="textPassword"
+                android:hint="새비밀번호를 입력해주세요."
+                android:textSize="20dp" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/newpwok"
+            android:text="변경"
+            android:backgroundTint="#54bebb"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal" >
+            <ImageButton
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:contentDescription="하고 싶은 설명"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom"
+                android:background="#54bebb"
+                android:layout_weight="1"
+                android:src="@drawable/homebtn"
+                android:scaleType="fitCenter"
+                />
+            <ImageButton
+                android:id="@+id/mypg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom"
+                android:background="#54bebb"
+                android:layout_weight="1"
+                android:src="@drawable/mypage"
+                android:contentDescription="하고 싶은 설명"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

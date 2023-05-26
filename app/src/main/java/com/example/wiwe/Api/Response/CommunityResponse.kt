@@ -1,12 +1,8 @@
-package com.example.wiwe
+package com.example.wiwe.Api.Response
 
 import com.google.gson.annotations.SerializedName
 
-//아웃풋을 만든다
-//아웃풋=서버에서 통신을 호출했을 때 받아오는 응답값
-
-data class LoginResponse(
-
+data class CommunityResponse(
     var successs :Boolean,
     var code : Int,//에러코드 띄우기
     var result: Result?
@@ -14,12 +10,14 @@ data class LoginResponse(
 //이 변수명이 서버에서 json에 있는 key값과 같아야함
 )
 data class Result(
-    val data: Login?,
+    val data:createboard?,
     val message: String
-        )
-
-data class Login(
-    val accessToken: String
 )
 
+data class createboard(
 
+    var boardsId: Long,
+    var boardsTitle:String,
+    var boardsContent: String,
+   // var boardsCreatedAt: String
+)

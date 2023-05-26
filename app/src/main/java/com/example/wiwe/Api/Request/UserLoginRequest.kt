@@ -1,4 +1,4 @@
-package com.example.wiwe
+package com.example.wiwe.Api.Request
 
 public final data class UserLoginRequest(
     val username: String,

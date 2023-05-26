@@ -6,7 +6,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
-import androidx.appcompat.app.AlertDialog
+import com.example.wiwe.Api.Request.LoginService
+import com.example.wiwe.Api.Request.UserLoginRequest
 import com.example.wiwe.databinding.ActivityMainBinding
 
 import okhttp3.OkHttpClient
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //타이틀 숨기기
-        var actionBar: ActionBar?
+        val actionBar: ActionBar?
         actionBar = supportActionBar
         actionBar?.hide()
 
@@ -40,22 +41,21 @@ class MainActivity : AppCompatActivity() {
         //얼마나 빨리 서버에 바이트를 보낼 수 있는지 확인
 
 
-        var retrofit = Retrofit.Builder()
-            .baseUrl("http://15.164.60.202:8080/")//서버주소 작성
+        val retrofit = Retrofit.Builder()
+            .baseUrl("http://13.209.135.53:8080/")//서버주소 작성
             .addConverterFactory(GsonConverterFactory.create())
-           // .build()
             .client(client).build()
 
-        var Service = retrofit.create(LoginService::class.java)
+        val Service = retrofit.create(LoginService::class.java)
 
         binding.btnSignup.setOnClickListener {
-            var intent = Intent(this, Register::class.java)
+            val intent = Intent(this, Register::class.java)
             startActivity(intent)
         }
 
         binding.btnLogin.setOnClickListener {
-            var username = binding.etId.text.toString()
-            var password = binding.etPw.text.toString()
+            val username = binding.etId.text.toString()
+            val password = binding.etPw.text.toString()
             val data = UserLoginRequest(username, password)
             Service.requestLgoin(data)
                 .enqueue(object : Callback<LoginResponse> {
@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
                             // 받아온 jwt 토큰 가져와서 preference에 저장
                             //로그인 성공 시 서버로부터 받은 JWT token을 sharedPreferences에 저장하고 메인화면으로 넘어감
                             //JWT token은 이후 API 호출 시 서버에서 사용자 인증을 할 때 사용
-                            var result = response.body()
+                            val result = response.body()
                            val token = result?.result?.data?.accessToken
                             val sharedPreference = getSharedPreferences("token", MODE_PRIVATE) //MODE_PRIVATE(앱에서만 접근 가능) // MODE_WORLD_READABLE/MODE_WORLD_WRITEABLE(WORLD의 keyword가 속해있는 NODE는 다른 앱에서 접근이 가능)
                             val editor = sharedPreference.edit()

@@ -1,5 +1,6 @@
-package com.example.wiwe
+package com.example.wiwe.Api.Request
 
+import com.example.wiwe.RigisterResponse
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -11,10 +12,5 @@ interface RegisterService {
     @Headers("content-type: application/json", "accept: application/json")
     fun register(
         @Body request: UserRegisterRequest
-      // @Field("name") name: String,
-     // @Field("nickname") nickname: String,
-       // @Field("password") password: String,
-       // @Field("username") username: String
-
     ): Call<RigisterResponse>
 }
