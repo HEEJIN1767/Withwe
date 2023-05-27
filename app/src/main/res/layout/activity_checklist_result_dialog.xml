@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    tools:context=".ChecklistResultDialog">
+
+    <TextView
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+
+        android:text="체크리스트 결과"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="현재 상태는" ></TextView>
+
+        <TextView
+            android:id="@+id/checklistSingleResult"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#2196F3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="'상태'" ></TextView>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="입니다" ></TextView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

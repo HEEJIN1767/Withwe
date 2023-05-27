@@ -47,7 +47,6 @@ class CreateCal : AppCompatActivity() {
         actionBar = supportActionBar
         actionBar?.hide()
         var memoDate = ""
-        var reservedTime = ""
 
         val sharedPreferences = getSharedPreferences("token", MODE_PRIVATE)
         val jwt = sharedPreferences.getString("jwt", "")
