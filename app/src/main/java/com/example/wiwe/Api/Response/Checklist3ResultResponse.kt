@@ -15,4 +15,5 @@ data class Checklist3ResponseResult1(
 data class Checklist3Result1(
 
     var checklistResult: String,
+    var checklistNumber: String
 )

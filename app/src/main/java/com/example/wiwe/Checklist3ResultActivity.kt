@@ -62,6 +62,7 @@ class Checklist3ResultActivity : AppCompatActivity() {
 
                             var intent = Intent(applicationContext, ChecklistMainActivity::class.java)
                             startActivity(intent)
+
                         } else {
                             Log.d("변경", "실패")
                             Toast.makeText(this@Checklist3ResultActivity, "변경 실패", Toast.LENGTH_SHORT).show()

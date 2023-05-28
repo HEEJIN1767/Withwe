@@ -36,6 +36,7 @@ class Checklist1ResultActivity : AppCompatActivity() {
                 intent.getIntExtra("checklistA9",0) +
                 intent.getIntExtra("checklistA10",0) + intent.getIntExtra("checklistA11",0)
 
+
         Log.d("sum",sum.toString())
 
         val sharedPreferences = getSharedPreferences("token", MODE_PRIVATE)

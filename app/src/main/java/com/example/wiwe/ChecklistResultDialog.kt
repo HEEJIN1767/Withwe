@@ -11,6 +11,8 @@ import com.example.wiwe.Api.Request.Checklist1ResultService
 import com.example.wiwe.Api.Request.Checklist2ResultService
 import com.example.wiwe.Api.Response.Checklist1ResultResponse
 import com.example.wiwe.Api.Response.Checklist2ResultResponse
+import com.example.wiwe.databinding.ActivityChecklist2ResultDialogBinding
+import com.example.wiwe.databinding.ActivityChecklistResultDialogBinding
 import okhttp3.OkHttpClient
 import retrofit2.Call
 import retrofit2.Callback
@@ -20,6 +22,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
 class ChecklistResultDialog : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -27,6 +30,7 @@ class ChecklistResultDialog : AppCompatActivity() {
         setContentView(R.layout.activity_checklist_result_dialog)
 
         val checklistSingleResult = findViewById<TextView>(R.id.checklistSingleResult)
+        val checklistSingleResultNumber = findViewById<TextView>(R.id.checklistNumber1)
 
         val sharedPreferences = getSharedPreferences("token", MODE_PRIVATE)
         val jwt = sharedPreferences.getString("jwt", "")
@@ -43,7 +47,6 @@ class ChecklistResultDialog : AppCompatActivity() {
             .client(client).build()
 
         val service1 = retrofit.create(Checklist1ResultService::class.java)
-        val service2 = retrofit.create(Checklist2ResultService::class.java)
 
         service1.checklistResult1()
             .enqueue(object : Callback<Checklist1ResultResponse> {
@@ -60,9 +63,11 @@ class ChecklistResultDialog : AppCompatActivity() {
                         // 조회한 결과로 텍스트 설정
                         // binding.timeTv.setText(result?.result?.data?.createdAt.toString())
                         checklistSingleResult.setText(result?.result?.data?.checklistResult)
-
-
-
+                        checklistSingleResultNumber.setText(result?.result?.data?.checklistNumber)
+                    }
+                    else {
+                        Toast.makeText(applicationContext, "체크리스트1을 먼저 실행해주세요", Toast.LENGTH_SHORT)
+                            .show()
                     }
                 }
 

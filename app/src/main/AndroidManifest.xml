@@ -24,6 +24,9 @@
         tools:replace="android:appComponentFactory"
         tools:targetApi="31">
         <activity
+            android:name=".ChecklistFinalResultActivity"
+            android:exported="false" />
+        <activity
             android:name=".Checklist3ResultActivity"
             android:exported="false" />
         <activity
