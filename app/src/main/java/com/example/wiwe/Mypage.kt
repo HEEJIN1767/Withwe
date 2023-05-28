@@ -49,7 +49,7 @@ class Mypage : AppCompatActivity() {
         val Service = retrofit.create(UserInfoSevice::class.java)
 
 
-        //게시물 단건조회
+        //유저 조회
         Service.UserInfo()
             .enqueue(object : Callback<UserInfoResponse> {
 

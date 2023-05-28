@@ -34,6 +34,11 @@ class WiWemain : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.cklist.setOnClickListener {
+            val intent = Intent(this,ChecklistMainActivity::class.java)
+            startActivity(intent)
+        }
+
 
 
     }
