@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".LoginResponse">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/together"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:text="WiWe"
+            android:background="#54bebb"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="80dp"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:entries="@array/information">
+        </Spinner>
+
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+
+                <TextView
+                    android:id="@+id/title_tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toTopOf="@id/content_tv"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:text="제목" />
+
+                <Button
+                    android:id="@+id/content_tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:backgroundTint="#ABDEE6"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toTopOf="@id/content_tv"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:text="내용1" />
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#80E1E1E1"
+                    android:layout_margin="10dp"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/content_tv1a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv1b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv1c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+
+                    <Button
+                        android:id="@+id/cancel1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="닫기"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="#E2E2E2"
+                        android:textColor="@color/black"
+                        android:layout_gravity="bottom|right"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/content_tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:backgroundTint="#ABDEE6"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toTopOf="@id/content_tv"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:text="내용1" />
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#80E1E1E1"
+                    android:layout_margin="10dp"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/content_tv2a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv2b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv2c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+                    <TextView
+                        android:id="@+id/content_tv2d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <Button
+                        android:id="@+id/cancel2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="닫기"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="#E2E2E2"
+                        android:textColor="@color/black"
+                        android:layout_gravity="bottom|right"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/content_tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:backgroundTint="#ABDEE6"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toTopOf="@id/content_tv"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:text="내용1" />
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#80E1E1E1"
+                    android:layout_margin="10dp"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/content_tv3a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용3a" />
+
+                    <TextView
+                        android:id="@+id/content_tv3b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv3c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv3d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <Button
+                        android:id="@+id/cancel3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="닫기"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="#E2E2E2"
+                        android:textColor="@color/black"
+                        android:layout_gravity="bottom|right"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/content_tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:backgroundTint="#ABDEE6"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toTopOf="@id/content_tv"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:text="내용1" />
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#80E1E1E1"
+                    android:layout_margin="10dp"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/content_tv4a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv4b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <Button
+                        android:id="@+id/cancel4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="닫기"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="#E2E2E2"
+                        android:textColor="@color/black"
+                        android:layout_gravity="bottom|right"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/title_tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toTopOf="@id/content_tv"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:text="제목" />
+
+                <Button
+                    android:id="@+id/content_tv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:backgroundTint="#ABDEE6"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toTopOf="@id/content_tv"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:text="내용1" />
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#80E1E1E1"
+                    android:layout_margin="10dp"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/content_tv5a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv5b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv5c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <Button
+                        android:id="@+id/cancel5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="닫기"
+                        android:backgroundTint="#E2E2E2"
+                        android:textColor="@color/black"
+                        android:layout_gravity="bottom|right"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/content_tv6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:backgroundTint="#ABDEE6"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toTopOf="@id/content_tv"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:text="내용1" />
+                <LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#80E1E1E1"
+                    android:layout_margin="10dp"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/content_tv6a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv6b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv6c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <Button
+                        android:id="@+id/cancel6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="닫기"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="#E2E2E2"
+                        android:textColor="@color/black"
+                        android:layout_gravity="bottom|right"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/content_tv7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:backgroundTint="#ABDEE6"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toTopOf="@id/content_tv"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:text="내용1" />
+                <LinearLayout
+                    android:id="@+id/linearLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#80E1E1E1"
+                    android:layout_margin="10dp"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/content_tv7a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv7b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv7c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <Button
+                        android:id="@+id/cancel7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="닫기"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="#E2E2E2"
+                        android:textColor="@color/black"
+                        android:layout_gravity="bottom|right"
+                        android:gravity="center" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/content_tv8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:backgroundTint="#ABDEE6"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toTopOf="@id/content_tv"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:text="내용1" />
+                <LinearLayout
+                    android:id="@+id/linearLayout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#80E1E1E1"
+                    android:layout_margin="10dp"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/content_tv8a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv8b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv8c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <Button
+                        android:id="@+id/cancel8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="닫기"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="#E2E2E2"
+                        android:textColor="@color/black"
+                        android:layout_gravity="bottom|right"
+                        android:gravity="center" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/content_tv9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:backgroundTint="#ABDEE6"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toTopOf="@id/content_tv"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:text="내용1" />
+                <LinearLayout
+                    android:id="@+id/linearLayout9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#80E1E1E1"
+                    android:layout_margin="10dp"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/content_tv9a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv9b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv9c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <Button
+                        android:id="@+id/cancel9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="닫기"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="#E2E2E2"
+                        android:textColor="@color/black"
+                        android:layout_gravity="bottom|right"
+                        android:gravity="center" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/content_tv10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:backgroundTint="#ABDEE6"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toTopOf="@id/content_tv"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:text="내용1" />
+                <LinearLayout
+                    android:id="@+id/linearLayout10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#80E1E1E1"
+                    android:layout_margin="10dp"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/content_tv10a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv10b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        tools:text="내용1a" />
+
+                    <TextView
+                        android:id="@+id/content_tv10c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toTopOf="@id/content_tv"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:text="내용1a" />
+
+                    <Button
+                        android:id="@+id/cancel10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="닫기"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="#E2E2E2"
+                        android:textColor="@color/black"
+                        android:layout_gravity="bottom|right"
+                        android:gravity="center" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

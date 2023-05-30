@@ -104,10 +104,10 @@ class readcommunity : AppCompatActivity() {
 
             })
         //게시물 수정하기
-        binding.changeButton.setOnClickListener {
+        binding.communityChangeButton.setOnClickListener {
             //val id = intent.getLongExtra("id", 0)
 
-            val intent = Intent(this@readcommunity, ChagneMemo::class.java)
+            val intent = Intent(this@readcommunity, ChangeCommunity::class.java)
             intent.putExtra("id",id)
             startActivity(intent)
             finish()
@@ -137,7 +137,7 @@ class readcommunity : AppCompatActivity() {
                         } else {
                             Log.d("삭제", "실패")
 
-                            Toast.makeText(this@readcommunity, "변경 실패", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@readcommunity, "삭제 실패", Toast.LENGTH_SHORT).show()
                         }
                     }
 

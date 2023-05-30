@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChecklistB4Activity">
+
+    <TextView
+        android:id="@+id/together"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:text="WiWe"
+        android:background="#54bebb"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="80dp"/>
+
+    <TextView
+        android:id="@+id/check_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="4/13"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="#E6626565"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/check_A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="고집이 세 졌습니까?"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/rg2_D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <RadioButton
+            android:id="@+id/rb2d1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 아니오 "
+            android:padding="15dp"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/rb2d2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 예 "
+            android:padding="15dp"
+            android:textSize="20sp"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn2_next_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="다음"
+        android:layout_margin="20dp"
+        android:textSize="30sp"
+        android:backgroundTint="@color/teal_700"/>
+
+</LinearLayout>

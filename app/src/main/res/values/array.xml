@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="information">
+        <item>생활습관</item>
+        <item>영양소</item>
+        <item>여성질환</item>
+        <item>산부인과</item>
+
+
+    </string-array>
+
+
+</resources>

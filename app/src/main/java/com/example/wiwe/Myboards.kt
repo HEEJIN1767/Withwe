@@ -57,6 +57,12 @@ class Myboards : AppCompatActivity() {
             .addConverterFactory(GsonConverterFactory.create())
             .client(client).build()
 
+
+        binding.mypg.setOnClickListener {
+            val intent = Intent(this, Mypage::class.java)
+            startActivity(intent)
+        }
+
         // 리사이클러 뷰 레이아웃 매니저 설정, 어댑터 추가
         binding.recyclerView.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)

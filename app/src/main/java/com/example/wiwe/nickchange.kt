@@ -50,7 +50,10 @@ class nickchange : AppCompatActivity() {
             startActivity(intent)
         }
 
-
+        binding.mypg.setOnClickListener {
+            val intent = Intent(this, Mypage::class.java)
+            startActivity(intent)
+        }
 
         val Service = retrofit.create(ChagneNicknameService::class.java)
 

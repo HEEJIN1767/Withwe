@@ -51,7 +51,10 @@ class passchange : AppCompatActivity() {
             startActivity(intent)
         }
 
-
+        binding.mypg.setOnClickListener {
+            val intent = Intent(this, Mypage::class.java)
+            startActivity(intent)
+        }
         val Service = retrofit.create(ChangepassService::class.java)
 
         //닉네임 변경하기

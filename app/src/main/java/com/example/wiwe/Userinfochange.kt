@@ -54,7 +54,10 @@ class Userinfochange : AppCompatActivity() {
             startActivity(intent)
         }
 
-
+        binding.mypg.setOnClickListener {
+            val intent = Intent(this, Mypage::class.java)
+            startActivity(intent)
+        }
         binding.change2.setOnClickListener {
             val intent = Intent(this, nickchange::class.java)
             startActivity(intent)

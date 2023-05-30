@@ -88,7 +88,7 @@ class OnewMemo : AppCompatActivity() {
 
             })
         //메모 수정하기
-        binding.changeButton.setOnClickListener {
+        binding.MemoChangeButton.setOnClickListener {
             //val id = intent.getLongExtra("id", 0)
 
             val intent = Intent(this@OnewMemo, ChagneMemo::class.java)

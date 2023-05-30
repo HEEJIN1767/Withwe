@@ -68,7 +68,10 @@ class Myreview : AppCompatActivity() {
             startActivity(intent)
         }
 
-
+        binding.mypg.setOnClickListener {
+            val intent = Intent(this, Mypage::class.java)
+            startActivity(intent)
+        }
         val Service = retrofit.create(MycommentService::class.java)
         // 리사이클러뷰 클릭 이벤트
         MycommentAdapter.setItemClickListener(
@@ -76,10 +79,10 @@ class Myreview : AppCompatActivity() {
                 MycommentAdapter.OnItemClickListener {
                 override fun onClick(v: View, position: Int) {
 
-                    val id = listItems_myCommunity[position].boardsId
+                    val id = listItems_Community[position].boardsId
                     val intent = Intent(this@Myreview, readcommunity::class.java)
                     intent.putExtra("id", id)
-                    Log.e("게시물 id 확인", "${id}")
+                    Log.e("boardsId 확인", "${id}")
                     startActivity(intent)
                     finish()
                 }

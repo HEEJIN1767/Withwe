@@ -85,7 +85,7 @@ class ChangeCommunity : AppCompatActivity() {
             })
 
         //게시물 수정하기
-        binding.changeButton.setOnClickListener {
+        binding.communityChangeButton.setOnClickListener {
 
             val title = binding.titleEt.text.toString()//아이디
             val content = binding.contentEt.text.toString()//이름
@@ -97,6 +97,7 @@ class ChangeCommunity : AppCompatActivity() {
                         call: Call<ReadCommunityResponse>,
                         response: Response<ReadCommunityResponse>
                     ) {
+                        println(response)
                         if (response.isSuccessful) {
                             val result = response.body()
                             Log.e("변경 완료", "${result}")

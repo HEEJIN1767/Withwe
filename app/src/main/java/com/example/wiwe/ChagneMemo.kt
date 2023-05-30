@@ -89,7 +89,7 @@ class ChagneMemo : AppCompatActivity() {
             })
 
         //메모 수정하기
-        binding.changeButton.setOnClickListener {
+        binding.MemoChangeButton.setOnClickListener {
 
             val memoTitle = binding.titleEt.text.toString()//아이디
             val memoContent1 = binding.contentEt1.text.toString()//이름

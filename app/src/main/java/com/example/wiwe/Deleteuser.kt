@@ -55,7 +55,10 @@ class Deleteuser : AppCompatActivity() {
             val intent = Intent(this, WiWemain::class.java)
             startActivity(intent)
         }
-
+        binding.mypg.setOnClickListener {
+            val intent = Intent(this, Mypage::class.java)
+            startActivity(intent)
+        }
         val Service = retrofit.create(DeleteUserService::class.java)
 
         binding.deleteuser.setOnClickListener {
