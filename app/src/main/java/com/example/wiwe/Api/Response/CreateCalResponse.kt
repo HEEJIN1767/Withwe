@@ -8,11 +8,11 @@ data class CreateCalResponse(
 //이 변수명이 서버에서 json에 있는 key값과 같아야함
 )
 data class CalResult(
-    val data:createCal?,
+    val data:CreateCal?,
     val message: String
 )
 
-data class createCal(
+data class CreateCal(
 
     var memoId: Long
 

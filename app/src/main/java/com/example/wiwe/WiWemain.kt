@@ -7,6 +7,7 @@ import androidx.appcompat.app.ActionBar
 import com.example.wiwe.databinding.ActivityWiWemainBinding
 
 class WiWemain : AppCompatActivity() {
+    var backKeyPressedTime : Long = 0
     private lateinit var binding: ActivityWiWemainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,5 +37,17 @@ class WiWemain : AppCompatActivity() {
 
 
 
+    }
+    //뒤로 가기 막기
+    override fun onBackPressed() {
+        //super.onBackPressed()
+
+        if(System.currentTimeMillis() > backKeyPressedTime + 2500){
+            backKeyPressedTime = System.currentTimeMillis();
+            return;
+        }
+        if (System.currentTimeMillis() <= backKeyPressedTime + 2500){
+            finishAffinity()
+        }
     }
 }

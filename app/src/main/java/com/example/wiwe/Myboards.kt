@@ -62,6 +62,12 @@ class Myboards : AppCompatActivity() {
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         binding.recyclerView.adapter = MyboardsAdapter
 
+        binding.home.setOnClickListener {
+            val intent = Intent(this, WiWemain::class.java)
+            startActivity(intent)
+        }
+
+
         val Service = retrofit.create(MyboardsService::class.java)
 
 

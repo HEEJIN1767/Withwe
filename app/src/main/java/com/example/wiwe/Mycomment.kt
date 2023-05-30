@@ -63,6 +63,11 @@ class Myreview : AppCompatActivity() {
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         binding.recyclerView.adapter = MycommentAdapter
 
+        binding.home.setOnClickListener {
+            val intent = Intent(this, WiWemain::class.java)
+            startActivity(intent)
+        }
+
 
         val Service = retrofit.create(MycommentService::class.java)
         // 리사이클러뷰 클릭 이벤트
@@ -72,8 +77,7 @@ class Myreview : AppCompatActivity() {
                 override fun onClick(v: View, position: Int) {
 
                     val id = listItems_myCommunity[position].boardsId
-                    val intent =
-                        Intent(this@Myreview, readcommunity::class.java)
+                    val intent = Intent(this@Myreview, readcommunity::class.java)
                     intent.putExtra("id", id)
                     Log.e("게시물 id 확인", "${id}")
                     startActivity(intent)

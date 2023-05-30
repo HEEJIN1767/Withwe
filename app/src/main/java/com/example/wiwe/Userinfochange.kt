@@ -49,6 +49,12 @@ class Userinfochange : AppCompatActivity() {
             .client(client).build()
         val Service = retrofit.create(DeleteUserService::class.java)
 
+        binding.home.setOnClickListener {
+            val intent = Intent(this, WiWemain::class.java)
+            startActivity(intent)
+        }
+
+
         binding.change2.setOnClickListener {
             val intent = Intent(this, nickchange::class.java)
             startActivity(intent)

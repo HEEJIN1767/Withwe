@@ -46,12 +46,11 @@ class CreateCal : AppCompatActivity() {
         val actionBar: ActionBar?
         actionBar = supportActionBar
         actionBar?.hide()
+
         var memoDate = ""
-        var reservedTime = ""
 
         val sharedPreferences = getSharedPreferences("token", MODE_PRIVATE)
         val jwt = sharedPreferences.getString("jwt", "")
-
 
         val client = OkHttpClient.Builder().connectTimeout(1, TimeUnit.MINUTES)
             .addInterceptor(Recyclerviewcommunity.AddHeaderJWT(jwt.toString()))
@@ -107,7 +106,8 @@ class CreateCal : AppCompatActivity() {
             val memoContent2 = binding.contentEt2.text.toString()//내용2
            // val memoDate = localDate.toString()
 
-            val data = CreateCalRequest(memoTitle,memoContent1,memoContent2,memoDate)
+            val data = CreateCalRequest(memoTitle, memoContent1, memoContent2, memoDate)
+
             Service.CreateCal(data)
                 .enqueue(object : Callback<CreateCalResponse> {
 
@@ -122,9 +122,8 @@ class CreateCal : AppCompatActivity() {
                             val memoId = result?.result?.data?.memoId
 
                             Log.e("메모 등록 성공","${memoId}")
-                            val intent = Intent(this@CreateCal, OnewMemo::class.java)
+                            val intent = Intent(this@CreateCal, MemoList::class.java)
                             intent.putExtra("memoId", memoId)
-
                             startActivity(intent)
                             finish()
                         } else {

@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#eeeeee"
-            android:hint="내용을 입력하세요."
+            android:hint="오늘 하루는 어땠나요?"
             />
         <EditText
             android:id="@+id/content_et2"
@@ -83,8 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#eeeeee"
-            android:hint="내용을 입력하세요."
-            />
+            android:hint="어제 이 시간에 뭘하고 있었나요?" />
 
         <Button
             android:id="@+id/reg_button"

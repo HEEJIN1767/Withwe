@@ -107,8 +107,5 @@ class writecommunity : AppCompatActivity() {
                 })
         }
     }
-    //뒤로 가기 막기
-    override fun onBackPressed() {
-        //super.onBackPressed()
-    }
+
 }

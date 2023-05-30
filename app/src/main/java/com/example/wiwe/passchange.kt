@@ -46,6 +46,11 @@ class passchange : AppCompatActivity() {
             .baseUrl("http://13.209.135.53:8080/")//서버주소 작성
             .addConverterFactory(GsonConverterFactory.create())
             .client(client).build()
+        binding.home.setOnClickListener {
+            val intent = Intent(this, WiWemain::class.java)
+            startActivity(intent)
+        }
+
 
         val Service = retrofit.create(ChangepassService::class.java)
 

@@ -46,6 +46,12 @@ class Mypage : AppCompatActivity() {
             .addConverterFactory(GsonConverterFactory.create())
             .client(client).build()
 
+        binding.home.setOnClickListener {
+            val intent = Intent(this, WiWemain::class.java)
+            startActivity(intent)
+        }
+
+
         val Service = retrofit.create(UserInfoSevice::class.java)
 
 

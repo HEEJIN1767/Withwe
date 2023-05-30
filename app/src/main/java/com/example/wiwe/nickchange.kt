@@ -45,6 +45,13 @@ class nickchange : AppCompatActivity() {
             .addConverterFactory(GsonConverterFactory.create())
             .client(client).build()
 
+        binding.home.setOnClickListener {
+            val intent = Intent(this, WiWemain::class.java)
+            startActivity(intent)
+        }
+
+
+
         val Service = retrofit.create(ChagneNicknameService::class.java)
 
         //닉네임 변경하기

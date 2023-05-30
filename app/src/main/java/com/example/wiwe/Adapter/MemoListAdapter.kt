@@ -29,10 +29,8 @@ class MemoListAdapter(val itemList: ArrayList<MemoListData>): RecyclerView.Adapt
         holder.itemView.setOnClickListener {
             itemClickListener.onClick(it,position)
         }
-        holder.itemView.setOnLongClickListener {
-            itemLongClickListener.onLongClick(it, position)
-            return@setOnLongClickListener true
-        }
+
+
 
         holder.memoId.text = itemList[position].memoId.toString()
         holder.title.text = itemList[position].title
@@ -52,15 +50,13 @@ class MemoListAdapter(val itemList: ArrayList<MemoListData>): RecyclerView.Adapt
     interface OnItemClickListener {
         fun onClick(v: View, position: Int)
     }
-    interface OnItemLongClickListener {
-        fun onLongClick(v: View, position: Int)
-    }
+
+
     fun setItemClickListener(onItemClickListener: OnItemClickListener) {
         this.itemClickListener = onItemClickListener
     }
-    fun setItemLongClickListener(onItemLongClickListener: OnItemLongClickListener) {
-        this.itemLongClickListener = onItemLongClickListener
-    }
+
     private lateinit var itemClickListener : OnItemClickListener
-    private lateinit var itemLongClickListener: OnItemLongClickListener
+
 }
+

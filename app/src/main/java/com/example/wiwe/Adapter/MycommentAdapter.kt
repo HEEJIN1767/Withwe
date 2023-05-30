@@ -29,10 +29,9 @@ class MycommentAdapter(val itemList: ArrayList<myreviewdata>): RecyclerView.Adap
         holder.itemView.setOnClickListener {
             itemClickListener.onClick(it,position)
         }
-        holder.itemView.setOnLongClickListener {
-            itemLongClickListener.onLongClick(it, position)
-            return@setOnLongClickListener true
-        }
+
+
+
         holder.commentId.text = itemList[position].commentId.toString()
         holder.commentContent.text = itemList[position].commentContent
         //holder.commentCreatedAt.text = itemList[position].commentCreatedAt.toString()
@@ -52,16 +51,13 @@ class MycommentAdapter(val itemList: ArrayList<myreviewdata>): RecyclerView.Adap
     interface OnItemClickListener {
         fun onClick(v: View, position: Int)
     }
-    interface OnItemLongClickListener {
-        fun onLongClick(v: View, position: Int)
-    }
+
     fun setItemClickListener(onItemClickListener: OnItemClickListener) {
         this.itemClickListener = onItemClickListener
     }
-    fun setItemLongClickListener(onItemLongClickListener: OnItemLongClickListener) {
-        this.itemLongClickListener = onItemLongClickListener
-    }
+
     private lateinit var itemClickListener : OnItemClickListener
-    private lateinit var itemLongClickListener: OnItemLongClickListener
+
+
 }
 

@@ -3,6 +3,7 @@ package com.example.wiwe.Adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.wiwe.Api.Response.listboard
@@ -36,10 +37,8 @@ class SearchCommunityAdapter(val itemList: ArrayList<listboard>): RecyclerView.A
         holder.itemView.setOnClickListener {
             itemClickListener.onClick(it, position)
         }
-        holder.itemView.setOnLongClickListener {
-            itemLongClickListener.onLongClick(it, position)
-            return@setOnLongClickListener true
-        }
+
+
         holder.title.text = itemList[position].title
         holder.nickname.text = itemList[position].nickname
         holder.boardsId.text = itemList[position].boardsId.toString()
@@ -61,19 +60,14 @@ class SearchCommunityAdapter(val itemList: ArrayList<listboard>): RecyclerView.A
             fun onClick(v: View, position: Int)
         }
 
-        interface OnItemLongClickListener {
-            fun onLongClick(v: View, position: Int)
-        }
+
 
         fun setItemClickListener(onItemClickListener: OnItemClickListener) {
             this.itemClickListener = onItemClickListener
         }
 
-        fun setItemLongClickListener(onItemLongClickListener: OnItemLongClickListener) {
-            this.itemLongClickListener = onItemLongClickListener
-        }
 
         private lateinit var itemClickListener: OnItemClickListener
-        private lateinit var itemLongClickListener: OnItemLongClickListener
+
     }
 
