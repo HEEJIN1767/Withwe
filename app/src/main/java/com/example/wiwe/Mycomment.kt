@@ -79,16 +79,16 @@ class Myreview : AppCompatActivity() {
                 MycommentAdapter.OnItemClickListener {
                 override fun onClick(v: View, position: Int) {
 
-                    val id = listItems_Community[position].boardsId
+                    val id = listItems_myComment[position].boardsId
                     val intent = Intent(this@Myreview, readcommunity::class.java)
                     intent.putExtra("id", id)
-                    Log.e("boardsId 확인", "${id}")
+                    Log.e("id 확인", "${id}")
                     startActivity(intent)
                     finish()
                 }
             })
 
-        //댓글 조회하기
+        //댓글 목록 조회하기
         Service.Mycomment()
             .enqueue(object : Callback<MyreviewResponse> {
                 override fun onResponse(

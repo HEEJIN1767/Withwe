@@ -1,11 +1,13 @@
 package com.example.wiwe
 
+import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AlertDialog
 import com.example.wiwe.Api.Request.OneMemoService
 import com.example.wiwe.Api.Request.ReadCommunityService
 import com.example.wiwe.Api.Response.DeleteCommunityResponse
@@ -100,7 +102,15 @@ class OnewMemo : AppCompatActivity() {
         //메모 삭제하기
         binding.deleteButton.setOnClickListener {
 
-            Service.deleteMemoResult(memoId)
+            // 다이얼로그 띄우기
+            AlertDialog.Builder(this@OnewMemo)
+                .setTitle("메모 삭제")
+                .setMessage("삭제하시겠습니까?")
+                .setPositiveButton("확인", object : DialogInterface.OnClickListener {
+                    override fun onClick(p0: DialogInterface?, p1: Int) {
+
+
+                        Service.deleteMemoResult(memoId)
                 .enqueue(object : Callback<DeleteMemoResponse> {
                     override fun onResponse(
                         call: Call<DeleteMemoResponse>,
@@ -119,7 +129,7 @@ class OnewMemo : AppCompatActivity() {
                         } else {
                             Log.d("삭제", "실패")
 
-                            Toast.makeText(this@OnewMemo, "변경 실패", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@OnewMemo, "삭제 실패", Toast.LENGTH_SHORT).show()
                         }
                     }
 
@@ -128,6 +138,15 @@ class OnewMemo : AppCompatActivity() {
                     }
 
                 })
+        }
+
+                })
+                .setNegativeButton("취소", object : DialogInterface.OnClickListener {
+                    override fun onClick(p0: DialogInterface?, p1: Int) {
+                    }
+                })
+                .create()
+                .show()
         }
     }
 }

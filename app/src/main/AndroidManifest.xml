@@ -15,7 +15,7 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:enableOnBackInvokedCallback="true"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/appicon"
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
         android:supportsRtl="true"
@@ -23,6 +23,12 @@
         android:usesCleartextTraffic="true"
         tools:replace="android:appComponentFactory"
         tools:targetApi="31">
+        <activity
+            android:name=".OneHobby"
+            android:exported="false" />
+        <activity
+            android:name=".HobbyList"
+            android:exported="false" />
         <activity
             android:name=".Contents1"
             android:exported="false" />
@@ -56,9 +62,7 @@
         <activity
             android:name=".ChecklistB11Activity"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity11"
-            android:exported="false" />
+
         <activity
             android:name=".ChecklistB10Activity"
             android:exported="false" />
@@ -149,10 +153,7 @@
         <activity
             android:name=".MemoList"
             android:exported="false" />
-        <activity
-            android:name=".CalendarList"
-            android:exported="false"
-            android:label="@string/title_activity_calendar_list" />
+
         <activity
             android:name=".CreateCal"
             android:exported="false" />
@@ -189,9 +190,7 @@
         <activity
             android:name=".writecommunity"
             android:exported="false" />
-        <activity
-            android:name=".Searchcommunity"
-            android:exported="false" />
+
         <activity
             android:name=".readcommunity"
             android:exported="false" />

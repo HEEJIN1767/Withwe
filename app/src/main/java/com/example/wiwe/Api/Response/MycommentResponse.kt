@@ -16,6 +16,7 @@ data class myreviewdata(
 
 
     var commentId: Long,
-    var commentContent:String
+    var commentContent:String,
+    var boardsId: Long
    // var commentCreatedAt: String
 )

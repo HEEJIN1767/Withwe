@@ -72,9 +72,9 @@ class Mypage : AppCompatActivity() {
 
                         // 조회한 결과로 텍스트 설정
                         // binding.timeTv.setText(result?.result?.data?.createdAt.toString())
-                        binding.itemUsername.setText(result?.result?.data?.username)
-                        binding.itemName.setText(result?.result?.data?.name)
-                        binding.itemNickname.setText(result?.result?.data?.nickname)
+                       binding.itemUsername.setText(result?.result?.data?.username)
+                         binding.itemName.setText(result?.result?.data?.name)
+                         binding.itemNickname.setText(result?.result?.data?.nickname)
 
 
                     } else {

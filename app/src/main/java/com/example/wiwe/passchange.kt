@@ -57,7 +57,7 @@ class passchange : AppCompatActivity() {
         }
         val Service = retrofit.create(ChangepassService::class.java)
 
-        //닉네임 변경하기
+        //비밀번호 변경하기
         binding.newpwok.setOnClickListener {
 
             val recentPassword = binding.recentpassET.text.toString()//닉네임

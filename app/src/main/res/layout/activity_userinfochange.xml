@@ -20,61 +20,109 @@
         android:textAlignment="center"
         android:textSize="80dp"/>
 
-    <Button
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/black"
+        android:layout_gravity="center"/>
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:id="@+id/change2"
         android:text="회원정보 변경"
-        android:textColor="@color/black"
-        android:layout_marginTop="50dp"
         android:textSize="30dp"
-        android:backgroundTint="#D3D3D3"/>
-    <Button
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_gravity="center"/>
+
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:id="@+id/pwch"
-        android:layout_marginTop="20dp"
         android:text="비밀번호 변경"
         android:textSize="30dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:gravity="center"
         android:textColor="@color/black"
-        android:backgroundTint="#D3D3D3"/>
-    <Button
+        android:backgroundTint="@color/white"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_gravity="center"/>
+
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:id="@+id/out"
-        android:layout_marginTop="20dp"
         android:text="회원 탈퇴"
         android:textSize="30dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:gravity="center"
         android:textColor="@color/black"
-        android:backgroundTint="#D3D3D3"/>
+        android:backgroundTint="@color/white"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_gravity="center"/>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="205dp"
+        android:layout_height="match_parent"
         android:layout_gravity="bottom"
-        android:layout_weight="1"
+        android:layout_weight="4"
+        android:gravity="bottom"
         android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/home"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#54bebb"
+            android:background="@color/white"
             android:contentDescription="하고 싶은 설명"
+            android:padding="10dp"
             android:scaleType="fitCenter"
             android:src="@drawable/homebtn" />
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="@color/black"
+            android:layout_gravity="center"/>
 
         <ImageButton
             android:id="@+id/mypg"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#54bebb"
+            android:background="@color/white"
             android:contentDescription="하고 싶은 설명"
+            android:padding="10dp"
             android:scaleType="fitCenter"
             android:src="@drawable/mypage" />
+
     </LinearLayout>
 </LinearLayout>

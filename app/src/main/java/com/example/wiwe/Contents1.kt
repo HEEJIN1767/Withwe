@@ -15,6 +15,7 @@ class Contents1 : AppCompatActivity() {
     private lateinit var binding: ActivityContents1Binding
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityContents1Binding.inflate(layoutInflater)
@@ -47,18 +48,24 @@ class Contents1 : AppCompatActivity() {
 
                         binding.titleTv1.setText("여성에게 좋은 생활 습관")
 
+
+
                         binding.contentTv1.setText("1. 규칙적인 운동")
                         binding.contentTv1b.setVisibility(View.GONE)
                         binding.contentTv1c.setVisibility(View.GONE)
-                        binding.contentTv1a.setText("꾸준한 운동은 체중 관리 체력 향상 스트레스 감소 그리고 만성질환 예방에 도움이 된다. 주 2~3회, 하루 30분 이상의 중간 강도 운동이 권장되며, 걷기, 수영, 자전거 타기, 요가, 필라테스 등 다양한 운동을 선택할 수 있다.")
-                        binding.contentTv1.setOnClickListener {binding.linearLayout1.setVisibility(View.VISIBLE) }
-                        binding.cancel1.setOnClickListener { binding.linearLayout1.setVisibility(View.GONE) }
+                        binding.contentTv1a.setText("-꾸준한 운동은 체중 관리 체력 향상 스트레스 감소 그리고 만성질환 예방에 도움이 된다.\n-주 2~3회, 하루 30분 이상의 중간 강도 운동이 권장되며, 걷기, 수영, 자전거 타기, 요가, 필라테스 등 다양한 운동을 선택할 수 있다.")
+                        binding.contentTv1.setOnClickListener {
+                            binding.linearLayout1.setVisibility(View.VISIBLE)
+                          }
+                        binding.cancel1.setOnClickListener {
+                            binding.linearLayout1.setVisibility(View.GONE)
+                           }
 
                         binding.contentTv2.setText("2. 충분한 수면")
                         binding.contentTv2b.setVisibility(View.GONE)
                         binding.contentTv2c.setVisibility(View.GONE)
                         binding.contentTv2d.setVisibility(View.GONE)
-                        binding.contentTv2a.setText("여성들은 하루 최소 7~8시간의 수면이 필요하다. 수면 부족은 스트레스 증가, 심장질환, 당뇨병 등의 위험을 높일 수 있다.")
+                        binding.contentTv2a.setText("-여성들은 하루 최소 7~8시간의 수면이 필요하다.\n-수면 부족은 스트레스 증가, 심장질환, 당뇨병 등의 위험을 높일 수 있다.")
                         binding.contentTv2.setOnClickListener {binding.linearLayout2.setVisibility(View.VISIBLE) }
                         binding.cancel2.setOnClickListener { binding.linearLayout2.setVisibility(View.GONE) }
 
@@ -66,14 +73,14 @@ class Contents1 : AppCompatActivity() {
                         binding.contentTv3b.setVisibility(View.GONE)
                         binding.contentTv3c.setVisibility(View.GONE)
                         binding.contentTv3d.setVisibility(View.GONE)
-                        binding.contentTv3a.setText("스트레스는 신체와 정신 건강에 부정적인 영향을 미친다 여성들은 정기적인 휴식과 이완기법(깊은 숨쉬기, 명상, 아로마 테라피 등)을 통해 스트레스를 관리해야 한다.")
+                        binding.contentTv3a.setText("-스트레스는 신체와 정신 건강에 부정적인 영향을 미친다.\n-여성들은 정기적인 휴식과 이완기법(깊은 숨쉬기, 명상, 아로마 테라피 등)을 통해 스트레스를 관리해야 한다.")
                         binding.contentTv3.setOnClickListener{binding.linearLayout3.setVisibility(View.VISIBLE) }
                         binding.cancel3.setOnClickListener{ binding.linearLayout3.setVisibility(View.GONE) }
 
                         binding.contentTv4.setText("4. 건강한 식습관")
                         binding.contentTv4b.setVisibility(View.GONE)
                         binding.contentTv4c.setVisibility(View.GONE)
-                        binding.contentTv4a.setText("여성들은 과일 채소, 통곡류, 콩, 견과류 등의 영양소가 풍부한 음식품을 섭취해야 한다. 또한 과도한 카페인 설탕, 소금, 가공식품 섭취를 피해야 한다.")
+                        binding.contentTv4a.setText("-여성들은 과일 채소, 통곡류, 콩, 견과류 등의 영양소가 풍부한 음식품을 섭취해야 한다.\n-또한 과도한 카페인 설탕, 소금, 가공식품 섭취를 피해야 한다.")
                         binding.contentTv4.setOnClickListener {binding.linearLayout4.setVisibility(View.VISIBLE) }
                         binding.cancel4.setOnClickListener { binding.linearLayout4.setVisibility(View.GONE) }
 
@@ -81,7 +88,7 @@ class Contents1 : AppCompatActivity() {
                         binding.contentTv5b.setVisibility(View.GONE)
                         binding.contentTv5c.setVisibility(View.GONE)
                         binding.contentTv5.setVisibility(View.VISIBLE)
-                        binding.contentTv5a.setText("여성들은 건강을 위해 흡연을 피하고 음주를 적절한 선에서 관리해야 한다.")
+                        binding.contentTv5a.setText("-여성들은 건강을 위해 흡연을 피하고 음주를 적절한 선에서 관리해야 한다.")
                         binding.contentTv5.setOnClickListener {binding.linearLayout5.setVisibility(View.VISIBLE) }
                         binding.cancel5.setOnClickListener{ binding.linearLayout5.setVisibility(View.GONE) }
 
@@ -89,7 +96,7 @@ class Contents1 : AppCompatActivity() {
                         binding.contentTv6b.setVisibility(View.GONE)
                         binding.contentTv6c.setVisibility(View.GONE)
                         binding.contentTv6.setVisibility(View.VISIBLE)
-                        binding.contentTv6a.setText("여성들은 정기적으로 건강검진을 받아야 한다. 이를 통해 질환을 조기에 발견하고, 적절한 치료와 관리를 받을 수 있다. 여성 건강과 관련된 검진 항목으로는 유방암, 자궁경부암, 골밀도 검사 등이 있다.")
+                        binding.contentTv6a.setText("-여성들은 정기적으로 건강검진을 받아야 한다.\n-이를 통해 질환을 조기에 발견하고, 적절한 치료와 관리를 받을 수 있다.\n-여성 건강과 관련된 검진 항목으로는 유방암, 자궁경부암, 골밀도 검사 등이 있다.")
                         binding.contentTv6.setOnClickListener {binding.linearLayout6.setVisibility(View.VISIBLE) }
                         binding.cancel6.setOnClickListener { binding.linearLayout6.setVisibility(View.GONE) }
 
@@ -97,7 +104,7 @@ class Contents1 : AppCompatActivity() {
                         binding.contentTv7b.setVisibility(View.GONE)
                         binding.contentTv7c.setVisibility(View.GONE)
                         binding.contentTv7.setVisibility(View.VISIBLE)
-                        binding.contentTv7a.setText("여성들은 스트레스 관리, 건강한 식습관, 규칙적인 운동을 통해 호르몬 밸런스를 유지해야 한다. 호르몬 불균형은 여성 건강에 여러 가지 문제를 야기할 수 있으므로 이를 조절하는 것이 중요하다. ")
+                        binding.contentTv7a.setText("-여성들은 스트레스 관리, 건강한 식습관, 규칙적인 운동을 통해 호르몬 밸런스를 유지해야 한다.\n-호르몬 불균형은 여성 건강에 여러 가지 문제를 야기할 수 있으므로 이를 조절하는 것이 중요하다. ")
                         binding.contentTv7.setOnClickListener {binding.linearLayout7.setVisibility(View.VISIBLE) }
                         binding.cancel7.setOnClickListener { binding.linearLayout7.setVisibility(View.GONE) }
 
@@ -105,36 +112,57 @@ class Contents1 : AppCompatActivity() {
                         binding.contentTv8b.setVisibility(View.GONE)
                         binding.contentTv8c.setVisibility(View.GONE)
                         binding.contentTv8.setVisibility(View.VISIBLE)
-                        binding.contentTv8a.setText("여성들은 안전한 성관계를 통해 성병 감염의 위험을 줄일 수 있다. 또한, 정기적인 자궁경부암 검진을 통해 조기 발견 및 치료를 받을 수 있다.")
+                        binding.contentTv8a.setText("-여성들은 안전한 성관계를 통해 성병 감염의 위험을 줄일 수 있다.\n-또한, 정기적인 자궁경부암 검진을 통해 조기 발견 및 치료를 받을 수 있다.")
                         binding.contentTv8.setOnClickListener {binding.linearLayout8.setVisibility(View.VISIBLE) }
                         binding.cancel8.setOnClickListener{ binding.linearLayout8.setVisibility(View.GONE) }
 
                         binding.contentTv9.setText("9. 정신건강 관리")
                         binding.contentTv9b.setVisibility(View.GONE)
                         binding.contentTv9c.setVisibility(View.GONE)
-                        binding.contentTv9a.setText("여성들은 정신건강을 유지하기 위해 스트레스 관리, 충분한 수면, 취미활동, 사회활동 등을 통해 정신 건강을 챙겨야 한다. 우울증, 불안장애 등의 정신건강 문제 발생할 경우 적절한 치료와 상담을 받는 것이 중요하다.")
+                        binding.contentTv9a.setText("-여성들은 정신건강을 유지하기 위해 스트레스 관리, 충분한 수면, 취미활동, 사회활동 등을 통해 정신 건강을 챙겨야 한다.\n-우울증, 불안장애 등의 정신건강 문제 발생할 경우 적절한 치료와 상담을 받는 것이 중요하다.")
                         binding.contentTv9.setOnClickListener{binding.linearLayout9.setVisibility(View.VISIBLE) }
                         binding.cancel9.setOnClickListener{ binding.linearLayout9.setVisibility(View.GONE) }
 
                         binding.contentTv10.setText("10. 건강한 체중유지")
                         binding.contentTv10b.setVisibility(View.GONE)
                         binding.contentTv10c.setVisibility(View.GONE)
-                        binding.contentTv10a.setText("체중조절은 여성건강에 큰 영향을 미친다. 건강한 체중을 유지하기 위해 규칙적인 운동과 건강한 식습관을 유지해야 한다. 과체중이나 비만은 당뇨병, 심장질환, 관절 문제 등에 만성질환을 일으킬 수 있으므로 적절한 체중 관리가 필요하다.")
+                        binding.contentTv10a.setText("-체중조절은 여성건강에 큰 영향을 미친다. 건강한 체중을 유지하기 위해 규칙적인 운동과 건강한 식습관을 유지해야 한다.\n-과체중이나 비만은 당뇨병, 심장질환, 관절 문제 등에 만성질환을 일으킬 수 있으므로 적절한 체중 관리가 필요하다.")
                         binding.contentTv10.setOnClickListener {binding.linearLayout10.setVisibility(View.VISIBLE) }
                         binding.cancel10.setOnClickListener { binding.linearLayout10.setVisibility(View.GONE) }
 
                         binding.contentTv9.setVisibility(View.VISIBLE)
                         binding.contentTv10.setVisibility(View.VISIBLE)
                         binding.titleTv2.setVisibility(View.GONE)
+                        binding.viewTv5.setVisibility(View.VISIBLE)
+                        binding.viewTv4.setVisibility(View.GONE)
+                        binding.ivItem2.setVisibility(View.GONE)
+                        binding.viewTv6.setVisibility(View.VISIBLE)
+                        binding.viewTv7.setVisibility(View.VISIBLE)
+                        binding.viewTv8.setVisibility(View.VISIBLE)
+                        binding.viewTv9.setVisibility(View.VISIBLE)
+                        binding.viewTv10.setVisibility(View.VISIBLE)
 
+                        binding.ivItem5.setVisibility(View.GONE)
+                        binding.ivItem4.setVisibility(View.GONE)
+                        binding.ivItem3.setVisibility(View.GONE)
+                        binding.ivItem2.setVisibility(View.GONE)
+                        binding.ivItem1.setVisibility(View.VISIBLE)
 
+                        binding.viewIv1.setVisibility(View.GONE)
+                        binding.viewIv2.setVisibility(View.GONE)
+                        binding.viewIv3.setVisibility(View.GONE)
+                        binding.viewIv4.setVisibility(View.GONE)
+                        binding.viewIv5.setVisibility(View.GONE)
+                        binding.viewIv6.setVisibility(View.GONE)
+                        binding.viewIv7.setVisibility(View.GONE)
+                        binding.viewIv8.setVisibility(View.GONE)
                     }
                     1 -> {
                         binding.titleTv1.setText("여성에게 필요한 영양소")
 
                         binding.contentTv1.setText("1. 마그네슘")
                         binding.contentTv1c.setVisibility(View.GONE)
-                        binding.contentTv1a.setText("마그네슘은 뼈 건강에 대표적인 영양소인 칼슘과 함께 작용하기 때문에 갱년기 여성의 질환 중 하나인 골다공증 예방을 위해서 마그네슘을 섭취 하는 것이 좋습니다.")
+                        binding.contentTv1a.setText("-마그네슘은 뼈 건강에 대표적인 영양소인 칼슘과 함께 작용하기 때문에 갱년기 여성의 질환 중 하나인 골다공증 예방을 위해서 마그네슘을 섭취 하는 것이 좋습니다.")
                         binding.contentTv1b.setText("음식 - 다시마, 아몬드, 해바라기 씨")
                         binding.contentTv1b.setVisibility(View.VISIBLE)
                         binding.contentTv1.setOnClickListener {binding.linearLayout1.setVisibility(View.VISIBLE) }
@@ -145,7 +173,7 @@ class Contents1 : AppCompatActivity() {
                         binding.contentTv2d.setVisibility(View.GONE)
                         binding.contentTv2b.setText("음식 - 두부, 시리얼, 콩, 브로콜리, 생선")
                         binding.contentTv2b.setVisibility(View.VISIBLE)
-                        binding.contentTv2a.setText("폐경에 가까워질수록 여성들의 뼈세포가 줄어드는데 뼈세포의 생성을 도와주는 식품이 바로 칼슘입니다. 꾸준히 칼슘을 섭취 하는 것은 골다공증 위험을 줄일 수 있습니다.")
+                        binding.contentTv2a.setText("-폐경에 가까워질수록 여성들의 뼈세포가 줄어드는데 뼈세포의 생성을 도와주는 식품이 바로 칼슘입니다.\n-꾸준히 칼슘을 섭취 하는 것은 골다공증 위험을 줄일 수 있습니다.")
                         binding.contentTv2.setOnClickListener {binding.linearLayout2.setVisibility(View.VISIBLE) }
                         binding.cancel2.setOnClickListener { binding.linearLayout2.setVisibility(View.GONE) }
 
@@ -154,7 +182,7 @@ class Contents1 : AppCompatActivity() {
                         binding.contentTv3d.setVisibility(View.GONE)
                         binding.contentTv3b.setText("음식 - 잎사귀가 많은 채소류, 감귤류, 호박, 베리류, 견과류, 올리브오일")
                         binding.contentTv3b.setVisibility(View.VISIBLE)
-                        binding.contentTv3a.setText("엽산은 임신 중에 필수적인 영양분으로 많이 알려져 있지만 갱년기 여성에게도 꼭 필요한 영양소 입니다. 엽산이 부족하면 빈혈, 두통, 체중감소, 체력저하, 세포와 적혈구 수를 감소시켜 피로감, 구강염증, 모발, 손톱, 피부 등의 색상 변화 등을 일으키는 것을 예방할 수 있습니다.")
+                        binding.contentTv3a.setText("-엽산은 임신 중에 필수적인 영양분으로 많이 알려져 있지만 갱년기 여성에게도 꼭 필요한 영양소 입니다.\n-엽산이 부족하면 빈혈, 두통, 체중감소, 체력저하, 세포와 적혈구 수를 감소시켜 피로감, 구강염증, 모발, 손톱, 피부 등의 색상 변화 등을 일으키는 것을 예방할 수 있습니다.")
                         binding.contentTv3.setOnClickListener {binding.linearLayout3.setVisibility(View.VISIBLE) }
                         binding.cancel3.setOnClickListener{ binding.linearLayout3.setVisibility(View.GONE) }
 
@@ -162,7 +190,7 @@ class Contents1 : AppCompatActivity() {
                         binding.contentTv4c.setVisibility(View.GONE)
                         binding.contentTv4b.setText("음식 - 강낭콩, 병아리콩, 검은콩, 보리, 귀리, 아보카도, 배")
                         binding.contentTv4b.setVisibility(View.VISIBLE)
-                        binding.contentTv4a.setText("노화가 오면 특히 식이섬유가 들어 있는 식품을 많이 섭취하는 것이 좋습니다. 65세 이상의 여성에게 흔히 나타나는 변비는 활동량은 줄고 고열량의 식사가 증가했을 때 나타나는 것으로 섬유질이 풍부한 식단으로 배변을 촉진할 수 있도록 해야 합니다. 또한 식이섬유를 많이 섭취할수록 우울증 발병 위험도 낮출 수 있습니다. ")
+                        binding.contentTv4a.setText("-노화가 오면 특히 식이섬유가 들어 있는 식품을 많이 섭취하는 것이 좋습니다.\n-65세 이상의 여성에게 흔히 나타나는 변비는 활동량은 줄고 고열량의 식사가 증가했을 때 나타나는 것으로 섬유질이 풍부한 식단으로 배변을 촉진할 수 있도록 해야 합니다.\n-또한 식이섬유를 많이 섭취할수록 우울증 발병 위험도 낮출 수 있습니다. ")
                         binding.contentTv4.setOnClickListener {binding.linearLayout4.setVisibility(View.VISIBLE) }
                         binding.cancel4.setOnClickListener { binding.linearLayout4.setVisibility(View.GONE) }
 
@@ -170,7 +198,7 @@ class Contents1 : AppCompatActivity() {
                         binding.contentTv5c.setVisibility(View.GONE)
                         binding.contentTv5b.setText("음식 - 계란, 흰 살 생선, 검은콩, 참치 통조림, 귀리, 요거트")
                         binding.contentTv5b.setVisibility(View.VISIBLE)
-                        binding.contentTv5a.setText("노년기에 접어 들수록 근육생성 효율과 단백질 흡수율이 떨어져 일반 성인들보다 더 단백질 섭취에 신경써야 합니다. 단백질 섭취를 통해 근육을 유지해야 근육 감소증을 예방할 수 있고 근육량이 떨어지면서 살이 찌기 쉬운 체질로 변화하는 것을 막을 수 있습니다.")
+                        binding.contentTv5a.setText("-노년기에 접어 들수록 근육생성 효율과 단백질 흡수율이 떨어져 일반 성인들보다 더 단백질 섭취에 신경써야 합니다.\n-단백질 섭취를 통해 근육을 유지해야 근육 감소증을 예방할 수 있고 근육량이 떨어지면서 살이 찌기 쉬운 체질로 변화하는 것을 막을 수 있습니다.")
                         binding.contentTv5.setOnClickListener {binding.linearLayout5.setVisibility(View.VISIBLE) }
                         binding.cancel5.setOnClickListener { binding.linearLayout5.setVisibility(View.GONE) }
 
@@ -178,7 +206,7 @@ class Contents1 : AppCompatActivity() {
                         binding.contentTv6b.setVisibility(View.VISIBLE)
                         binding.contentTv6c.setVisibility(View.GONE)
                         binding.contentTv6b.setText("음식 - 비타민C 녹색잎 채소, 파슬리, 고수, 블랙베리, 라즈베리, 딸기\n비타민E 아몬드, 해바라기 씨, 땅콩 등 견과류, 식물성 기름")
-                        binding.contentTv6a.setText("갱년기에는 호르몬 변화로 인해 수면장애와 피로감이 급증하는데 이를 감소시킵니다. 강력한 항산화 물질인 비타민C와 비타민E를 섭취하면 세포의 노화를 막아주고 우리 몸이 더 건강해질 수 있습니다.")
+                        binding.contentTv6a.setText("-갱년기에는 호르몬 변화로 인해 수면장애와 피로감이 급증하는데 이를 감소시킵니다.\n-강력한 항산화 물질인 비타민C와 비타민E를 섭취하면 세포의 노화를 막아주고 우리 몸이 더 건강해질 수 있습니다.")
                         binding.contentTv6.setOnClickListener {binding.linearLayout6.setVisibility(View.VISIBLE) }
                         binding.cancel6.setOnClickListener { binding.linearLayout6.setVisibility(View.GONE) }
 
@@ -186,7 +214,7 @@ class Contents1 : AppCompatActivity() {
                         binding.contentTv7b.setVisibility(View.VISIBLE)
                         binding.contentTv7c.setVisibility(View.GONE)
                         binding.contentTv7b.setText("음식 - 생선, 살코기, 달걀, 우유")
-                        binding.contentTv7a.setText("뼈의 건강, DNA생산, 적혈구 생산 및 신경의 원활한 기능을 위해 필요합니다. 나이가 들어갈수록 비타민B12를 흡수하는 능력이 떨어져 결핍의 위험성이 높아지고 있습니다. 비타민B12가 부족하면 빈혈에 걸릴 위험이 커지며 기억력 감퇴나 우울증을 예방할 수 있습니다.")
+                        binding.contentTv7a.setText("-뼈의 건강, DNA생산, 적혈구 생산 및 신경의 원활한 기능을 위해 필요합니다.\n-나이가 들어갈수록 비타민B12를 흡수하는 능력이 떨어져 결핍의 위험성이 높아지고 있습니다.\n-비타민B12가 부족하면 빈혈에 걸릴 위험이 커지며 기억력 감퇴나 우울증을 예방할 수 있습니다.")
                         binding.contentTv7.setOnClickListener {binding.linearLayout7.setVisibility(View.VISIBLE) }
                         binding.cancel7.setOnClickListener { binding.linearLayout7.setVisibility(View.GONE) }
 
@@ -194,7 +222,7 @@ class Contents1 : AppCompatActivity() {
                         binding.contentTv8b.setVisibility(View.VISIBLE)
                         binding.contentTv8c.setVisibility(View.GONE)
                         binding.contentTv8b.setText("음식 - 유제품")
-                        binding.contentTv8a.setText("나이가 있는 여성이 충분히 섭취하지 못하면 뼈가 약해지고 골다공증에 걸리게 됩니다. 비타민D 결핍률은 약 81.4%에 달하며 국내 폐경기 여성 중 약 90.6%가 비타민D 결핍군에 속한다고 합니다. 비타민D는 주로 햇빛을 통해 얻어지는데 나이가 들수록 활동성이 줄어들기 때문에 유제품을 하루 226g 정도 섭취하여 비타민D를 보충하는 것이 좋습니다.")
+                        binding.contentTv8a.setText("-나이가 있는 여성이 충분히 섭취하지 못하면 뼈가 약해지고 골다공증에 걸리게 됩니다.\n-비타민D 결핍률은 약 81.4%에 달하며 국내 폐경기 여성 중 약 90.6%가 비타민D 결핍군에 속한다고 합니다.\n-비타민D는 주로 햇빛을 통해 얻어지는데 나이가 들수록 활동성이 줄어들기 때문에 유제품을 하루 226g 정도 섭취하여 비타민D를 보충하는 것이 좋습니다.")
                         binding.contentTv8.setOnClickListener {binding.linearLayout8.setVisibility(View.VISIBLE) }
                         binding.cancel8.setOnClickListener{ binding.linearLayout8.setVisibility(View.GONE) }
 
@@ -207,7 +235,28 @@ class Contents1 : AppCompatActivity() {
                         binding.titleTv2.setVisibility(View.GONE)
                         binding.linearLayout9.setVisibility(View.GONE)
                         binding.linearLayout10.setVisibility(View.GONE)
+                        binding.viewTv9.setVisibility(View.GONE)
+                        binding.viewTv10.setVisibility(View.GONE)
+                        binding.viewTv5.setVisibility(View.VISIBLE)
+                        binding.viewTv4.setVisibility(View.GONE)
+                        binding.viewTv6.setVisibility(View.VISIBLE)
+                        binding.viewTv7.setVisibility(View.VISIBLE)
+                        binding.viewTv8.setVisibility(View.VISIBLE)
 
+                        binding.ivItem5.setVisibility(View.GONE)
+                        binding.ivItem4.setVisibility(View.GONE)
+                        binding.ivItem3.setVisibility(View.GONE)
+                        binding.ivItem1.setVisibility(View.GONE)
+                        binding.ivItem2.setVisibility(View.VISIBLE)
+
+                        binding.viewIv1.setVisibility(View.VISIBLE)
+                        binding.viewIv2.setVisibility(View.VISIBLE)
+                        binding.viewIv3.setVisibility(View.VISIBLE)
+                        binding.viewIv4.setVisibility(View.VISIBLE)
+                        binding.viewIv5.setVisibility(View.VISIBLE)
+                        binding.viewIv6.setVisibility(View.VISIBLE)
+                        binding.viewIv7.setVisibility(View.VISIBLE)
+                        binding.viewIv8.setVisibility(View.VISIBLE)
                     }
                     2 -> {
                         binding.titleTv1.setText("여성 질환")
@@ -274,7 +323,28 @@ class Contents1 : AppCompatActivity() {
                         binding.linearLayout8.setVisibility(View.GONE)
                         binding.linearLayout9.setVisibility(View.GONE)
                         binding.linearLayout10.setVisibility(View.GONE)
+                        binding.viewTv6.setVisibility(View.GONE)
+                        binding.viewTv7.setVisibility(View.GONE)
+                        binding.viewTv8.setVisibility(View.GONE)
+                        binding.viewTv9.setVisibility(View.GONE)
+                        binding.viewTv10.setVisibility(View.GONE)
+                        binding.viewTv5.setVisibility(View.VISIBLE)
+                        binding.viewTv4.setVisibility(View.GONE)
 
+                        binding.ivItem5.setVisibility(View.GONE)
+                        binding.ivItem4.setVisibility(View.GONE)
+                        binding.ivItem1.setVisibility(View.GONE)
+                        binding.ivItem2.setVisibility(View.GONE)
+                        binding.ivItem3.setVisibility(View.VISIBLE)
+
+                        binding.viewIv1.setVisibility(View.GONE)
+                        binding.viewIv2.setVisibility(View.GONE)
+                        binding.viewIv3.setVisibility(View.GONE)
+                        binding.viewIv4.setVisibility(View.GONE)
+                        binding.viewIv5.setVisibility(View.GONE)
+                        binding.viewIv6.setVisibility(View.GONE)
+                        binding.viewIv7.setVisibility(View.GONE)
+                        binding.viewIv8.setVisibility(View.GONE)
                     }
                     3 -> {binding.titleTv1.setText("산부인과 검사")
 
@@ -388,10 +458,29 @@ class Contents1 : AppCompatActivity() {
                         binding.contentTv8.setVisibility(View.VISIBLE)
                         binding.contentTv9.setVisibility(View.VISIBLE)
                         binding.contentTv10.setVisibility(View.VISIBLE)
+                        binding.viewTv4.setVisibility(View.VISIBLE)
+                        binding.viewTv5.setVisibility(View.VISIBLE)
+                        binding.viewTv6.setVisibility(View.VISIBLE)
+                        binding.viewTv7.setVisibility(View.VISIBLE)
+                        binding.viewTv8.setVisibility(View.VISIBLE)
+                        binding.viewTv9.setVisibility(View.VISIBLE)
+                        binding.viewTv10.setVisibility(View.VISIBLE)
+                        binding.ivItem2.setVisibility(View.VISIBLE)
 
+                        binding.ivItem5.setVisibility(View.VISIBLE)
+                        binding.ivItem4.setVisibility(View.VISIBLE)
+                        binding.ivItem3.setVisibility(View.GONE)
+                        binding.ivItem2.setVisibility(View.GONE)
+                        binding.ivItem1.setVisibility(View.GONE)
 
-
-
+                        binding.viewIv1.setVisibility(View.GONE)
+                        binding.viewIv2.setVisibility(View.GONE)
+                        binding.viewIv3.setVisibility(View.GONE)
+                        binding.viewIv4.setVisibility(View.GONE)
+                        binding.viewIv5.setVisibility(View.GONE)
+                        binding.viewIv6.setVisibility(View.GONE)
+                        binding.viewIv7.setVisibility(View.GONE)
+                        binding.viewIv8.setVisibility(View.GONE)
                     }
 
                 }

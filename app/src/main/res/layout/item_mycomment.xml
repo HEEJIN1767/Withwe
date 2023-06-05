@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:padding="16dp"
     android:layout_margin="16dp"
-    android:background="#eeeeee"
+    android:background="@drawable/round_button"
     android:orientation="vertical">
 
     <LinearLayout
@@ -27,12 +27,20 @@
         android:id="@+id/item_review"
         android:layout_width="match_parent"
         android:textColor="#333333"
+        android:gravity="center"
         android:layout_height="wrap_content"
         android:text="content" />
 
 
     <TextView
         android:id="@+id/item_number"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:text="number" />
+
+    <TextView
+        android:id="@+id/item_number1"
         android:layout_width="1dp"
         android:layout_height="1dp"
         android:layout_weight="1"

@@ -66,8 +66,8 @@ class readcommunity : AppCompatActivity() {
         // 인탠트해와서 데이터 반영
         val id = intent.getLongExtra("id", 0)
        // val boardsId = intent.getLongExtra("boardsId", 0)
-        //val commentId = intent.getLongExtra("commentId", 0)
-        //게시물 단건조회
+        val commentId = intent.getLongExtra("commentId", 0)
+        //게시물 단건 조회
         Service.onecommunity(id)
             .enqueue(object : Callback<ReadCommunityResponse> {
 
@@ -117,7 +117,15 @@ class readcommunity : AppCompatActivity() {
         //게시물 삭제하기
         binding.deleteButton.setOnClickListener {
 
-            Service.deleteResult(id)
+            // 다이얼로그 띄우기
+            AlertDialog.Builder(this@readcommunity)
+                .setTitle("게시물 삭제")
+                .setMessage("삭제하시겠습니까?")
+                .setPositiveButton("확인", object : DialogInterface.OnClickListener {
+                    override fun onClick(p0: DialogInterface?, p1: Int) {
+
+
+                        Service.deleteResult(id)
                 .enqueue(object : Callback<DeleteCommunityResponse> {
                     override fun onResponse(
                         call: Call<DeleteCommunityResponse>,
@@ -137,7 +145,7 @@ class readcommunity : AppCompatActivity() {
                         } else {
                             Log.d("삭제", "실패")
 
-                            Toast.makeText(this@readcommunity, "삭제 실패", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@readcommunity, "본인의 게시물이 아닙니다.", Toast.LENGTH_SHORT).show()
                         }
                     }
 
@@ -146,6 +154,14 @@ class readcommunity : AppCompatActivity() {
                     }
 
                 })
+        }
+                })
+                .setNegativeButton("취소", object : DialogInterface.OnClickListener {
+                    override fun onClick(p0: DialogInterface?, p1: Int) {
+                    }
+                })
+                .create()
+                .show()
         }
 
         //댓글 작성하기
@@ -201,7 +217,7 @@ class readcommunity : AppCompatActivity() {
                         } else {
 
                                 Log.d("댓글 등록", "실패")
-                                Toast.makeText(this@readcommunity, "댓글 다시 확인해주세요", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(this@readcommunity, "다시 확인해주세요", Toast.LENGTH_SHORT).show()
                         }
                     }
 
@@ -272,6 +288,7 @@ class readcommunity : AppCompatActivity() {
                                                 ReviewlistAdapter.notifyDataSetChanged() // 리사이클러뷰 갱신
                                             } else {
                                                 Log.d("댓글 삭제", "실패")
+                                                Toast.makeText(this@readcommunity, "본인의 댓글이 아닙니다.", Toast.LENGTH_SHORT).show()
                                             }
                                         }
                                         override fun onFailure(
@@ -281,6 +298,11 @@ class readcommunity : AppCompatActivity() {
                                             Log.e("연결실패", t.message.toString())
                                         }
                                     })
+                            }
+
+                        })
+                        .setNegativeButton("취소", object : DialogInterface.OnClickListener {
+                            override fun onClick(p0: DialogInterface?, p1: Int) {
                             }
                         })
                         .create()

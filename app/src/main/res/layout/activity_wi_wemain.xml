@@ -25,6 +25,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_marginTop="50dp"
             android:layout_gravity="center"
@@ -32,20 +39,24 @@
 
             <ImageButton
                 android:id="@+id/cklist"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:backgroundTint="#D3D3D3"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                android:backgroundTint="#e9ecef"
                 android:scaleType="fitCenter"
                 android:contentDescription="하고 싶은 설명"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/round_button"
                 android:src="@drawable/cklist" />
 
             <ImageButton
                 android:id="@+id/hb"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:padding="10dp"
                 android:layout_marginLeft="70dp"
-                android:backgroundTint="#D3D3D3"
+                android:backgroundTint="#e9ecef"
+                android:background="@drawable/round_button"
                 android:contentDescription="하고 싶은 설명"
                 android:src="@drawable/hb"
                 android:scaleType="fitCenter" />
@@ -60,52 +71,66 @@
 
             <ImageButton
                 android:id="@+id/cal"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_marginLeft="50dp"
-                android:backgroundTint="#D3D3D3"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:padding="10dp"
+                android:layout_marginLeft="40dp"
+                android:backgroundTint="#e9ecef"
+                android:background="@drawable/round_button"
                 android:contentDescription="하고 싶은 설명"
                 android:scaleType="fitCenter"
                 android:src="@drawable/cd" />
             <ImageButton
                 android:id="@+id/cm"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:padding="10dp"
                 android:layout_marginLeft="70dp"
+                android:background="@drawable/round_button"
                 android:contentDescription="하고 싶은 설명"
-                android:backgroundTint="#D3D3D3"
+                android:backgroundTint="#e9ecef"
                 android:src="@drawable/cm"
                 android:scaleType="fitCenter" />
+        </LinearLayout>
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:layout_gravity="bottom"
-            android:orientation="horizontal" >
+            android:layout_weight="4"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
             <ImageButton
                 android:id="@+id/home"
-                android:layout_width="match_parent"
-                android:contentDescription="하고 싶은 설명"
-                android:layout_height="100dp"
-                android:layout_gravity="bottom"
-                android:background="#54bebb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/white"
+                android:contentDescription="하고 싶은 설명"
                 android:padding="10dp"
-                android:src="@drawable/homebtn"
                 android:scaleType="fitCenter"
-                />
+                android:src="@drawable/homebtn" />
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/black"
+                android:layout_gravity="center"/>
+
             <ImageButton
                 android:id="@+id/mypg"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="bottom"
-                android:background="#54bebb"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:padding="10dp"
-                android:src="@drawable/mypage"
+                android:background="@color/white"
                 android:contentDescription="하고 싶은 설명"
-                android:scaleType="fitCenter" />
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mypage" />
+
         </LinearLayout>
 
     </LinearLayout>

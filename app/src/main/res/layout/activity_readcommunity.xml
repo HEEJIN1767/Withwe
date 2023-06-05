@@ -14,178 +14,156 @@
         android:textAlignment="center"
         android:textSize="80dp"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:background="#D3D3D3"
-        android:text="게시글 조회"
-        android:textAlignment="center"
-        android:textSize="25dp"
-        android:textStyle="bold" />
-
-  <ScrollView
-      android:layout_width="match_parent"
-      android:layout_height="match_parent">
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:contentDescription="하고 싶은 설명">
-
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:orientation="vertical"
-          android:padding="16dp">
 
 
-          <LinearLayout
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="horizontal">
-
-              <TextView
-                  android:layout_width="100dp"
-                  android:layout_height="wrap_content"
-                  android:text="작성시간" />
-
-              <TextView
-                  android:id="@+id/time_tv"
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:text="시간입니다." />
-          </LinearLayout>
-          <LinearLayout
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="horizontal">
-
-              <TextView
-                  android:layout_width="100dp"
-                  android:layout_height="wrap_content"
-                  android:padding="16dp"
-                  android:text="제목" />
-
-              <TextView
-                  android:id="@+id/title_tv"
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:background="#eeeeee"
-                  android:padding="16dp"
-                  android:text="제목입니다." />
-          </LinearLayout>
-
-          <LinearLayout
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="horizontal">
-
-              <TextView
-                  android:layout_width="100dp"
-                  android:layout_height="wrap_content"
-                  android:padding="16dp"
-                  android:text="닉네임" />
-
-              <TextView
-                  android:id="@+id/nick_tv"
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:background="#eeeeee"
-                  android:padding="16dp"
-                  android:text="닉네임입니다." />
-          </LinearLayout>
-
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:padding="16dp"
-              android:text="내용" />
-
-          <TextView
-              android:id="@+id/content_tv"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:background="#eeeeee"
-              android:padding="16dp"
-              android:text="내용입니다." />
-
-          <LinearLayout
-              android:layout_width="match_parent"
-              android:layout_height="50dp"
-              android:orientation="horizontal">
-
-              <Button
-                  android:id="@+id/delete_button"
-                  android:layout_width="wrap_content"
-                  android:layout_height="match_parent"
-                  android:layout_weight="1"
-                  android:backgroundTint="#54bebb"
-                  android:padding="8dp"
-                  android:text="삭제하기" />
-
-              <Button
-                  android:id="@+id/community_change_button"
-                  android:layout_width="wrap_content"
-                  android:layout_height="match_parent"
-                  android:layout_marginLeft="50dp"
-                  android:layout_weight="1"
-                  android:backgroundTint="#54bebb"
-                  android:padding="8dp"
-                  android:text="수정하기" />
-          </LinearLayout>
-
-          <TextView
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:text="댓글" />
-
-          <androidx.recyclerview.widget.RecyclerView
-              android:id="@+id/recyclerView"
-              android:layout_width="match_parent"
-              android:layout_height="200dp"
-              tools:listitem="@layout/item_myreview" />
-
-          <LinearLayout
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:layout_weight="1"
-              android:layout_gravity="bottom"
-              android:gravity="bottom"
-              android:orientation="horizontal" >
-
-              <EditText
-                  android:id="@+id/comment_et"
-                  android:layout_width="match_parent"
-                  android:layout_height="50dp"
-                  android:layout_gravity="bottom"
-                  android:background="#eeeeee"
-                  android:layout_weight="1"
-                  android:gravity="bottom"
-                  android:padding="10dp"
-                  android:hint="댓글 내용을 입력하세요"/>
-              <Button
-                  android:id="@+id/review_button"
-                  android:layout_width="wrap_content"
-                  android:layout_height="50dp"
-                  android:layout_gravity="bottom"
-                  android:padding="10dp"
-                  android:gravity="bottom"
-                  android:backgroundTint="#54bebb"
-                  android:text="등록하기"/>
-          </LinearLayout>
-
-      </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
 
 
-      </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:padding="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="작성시간" />
+
+                <TextView
+                    android:id="@+id/time_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="시간입니다." />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="제목" />
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#eeeeee"
+                    android:padding="16dp"
+                    android:text="제목입니다." />
+            </LinearLayout>
 
 
-  </ScrollView>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="닉네임" />
+
+                <TextView
+                    android:id="@+id/nick_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#eeeeee"
+                    android:padding="16dp"
+                    android:text="닉네임입니다." />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="내용" />
+
+            <TextView
+                android:id="@+id/content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:padding="16dp"
+                android:text="내용입니다." />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/delete_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="#54bebb"
+                    android:padding="8dp"
+                    android:text="삭제하기" />
+
+                <Button
+                    android:id="@+id/community_change_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#54bebb"
+                    android:padding="8dp"
+                    android:text="수정하기" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="댓글" />
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:listitem="@layout/item_myreview" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/comment_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#eeeeee"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom"
+                    android:padding="10dp"
+                    android:hint="댓글 내용을 입력하세요"/>
+
+                <Button
+                    android:id="@+id/review_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#54bebb"
+                    android:padding="10dp"
+                    android:layout_gravity="bottom"
+                    android:text="등록하기" />
+
+            </LinearLayout>
+        </LinearLayout>
 
 </LinearLayout>
-
-

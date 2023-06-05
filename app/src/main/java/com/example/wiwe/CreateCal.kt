@@ -129,7 +129,7 @@ class CreateCal : AppCompatActivity() {
                         } else {
 
                             Log.d("등록", "실패")
-                            Toast.makeText(this@CreateCal, "다시 확인해주세요", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@CreateCal, "빈칸을 확인해주세요", Toast.LENGTH_SHORT).show()
 
                         }
                     }

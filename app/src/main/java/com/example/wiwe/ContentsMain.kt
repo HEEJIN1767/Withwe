@@ -25,9 +25,18 @@ class ContentsMain : AppCompatActivity() {
             val intent = Intent(this, Contents1::class.java)
             startActivity(intent)
         }
+        binding.hb.setOnClickListener {
+            listItems_Hobby.clear()
+            val intent = Intent(this, HobbyList::class.java)
+            startActivity(intent)
+        }
 
         binding.home.setOnClickListener {
             val intent = Intent(this, WiWemain::class.java)
+            startActivity(intent)
+        }
+        binding.mypg.setOnClickListener {
+            val intent = Intent(this, Mypage::class.java)
             startActivity(intent)
         }
 
