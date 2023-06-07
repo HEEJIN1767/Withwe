@@ -5,6 +5,7 @@
     android:padding="16dp"
     android:layout_margin="16dp"
     android:background="@drawable/round_button"
+    android:backgroundTint="#e9ecef"
     android:orientation="vertical">
 
     <LinearLayout

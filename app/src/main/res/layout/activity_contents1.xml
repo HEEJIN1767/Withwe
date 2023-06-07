@@ -12,15 +12,22 @@
         android:layout_height="match_parent"
         android:orientation="vertical" >
 
-        <TextView
+        <ImageView
             android:id="@+id/together"
             android:layout_width="match_parent"
             android:layout_height="110dp"
-            android:text="WiWe"
-            android:background="#54bebb"
+            android:scaleType="fitCenter"
+
             android:layout_gravity="center"
             android:textAlignment="center"
+            android:src="@drawable/wiwe"
             android:textSize="80dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_gravity="center"/>
 
         <Spinner
             android:id="@+id/spinner"
@@ -384,7 +391,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="10dp"
-                            android:src="@drawable/du"/>
+                            android:src="@drawable/pum"/>
 
                         <ImageView
 
@@ -392,14 +399,14 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="15dp"
-                            android:src="@drawable/beans" />
+                            android:src="@drawable/berry" />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="10dp"
-                            android:src="@drawable/bro"/>
+                            android:src="@drawable/nut"/>
 
                     </LinearLayout>
 

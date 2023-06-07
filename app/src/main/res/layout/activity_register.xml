@@ -12,14 +12,22 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
+        <ImageView
+            android:id="@+id/together"
             android:layout_width="match_parent"
             android:layout_height="110dp"
+            android:scaleType="fitCenter"
+
             android:layout_gravity="center"
-            android:background="#54bebb"
-            android:text="WiWe"
             android:textAlignment="center"
-            android:textSize="80dp" />
+            android:src="@drawable/wiwe"
+            android:textSize="80dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_gravity="center"/>
 
         <TextView
             android:layout_width="match_parent"

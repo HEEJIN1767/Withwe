@@ -13,26 +13,33 @@
         android:layout_height="match_parent"
         android:orientation="vertical" >
 
-        <TextView
+        <ImageView
+            android:id="@+id/together"
             android:layout_width="match_parent"
             android:layout_height="110dp"
-            android:text="WiWe"
-            android:background="#54bebb"
+            android:scaleType="fitCenter"
             android:layout_gravity="center"
             android:textAlignment="center"
+            android:src="@drawable/wiwe"
             android:textSize="80dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_gravity="center"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:text="회원 탈퇴"
@@ -43,14 +50,9 @@
 
 
 
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:orientation="vertical">
+
+
         <ImageView
             android:id="@+id/my"
             android:layout_marginTop="20dp"
@@ -101,7 +103,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="bottom"
-            android:layout_weight="3"
+            android:layout_weight="4"
             android:gravity="bottom"
             android:orientation="horizontal">
 
@@ -119,7 +121,7 @@
 
             <View
                 android:layout_width="1dp"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:background="@color/black"
                 android:layout_gravity="center"/>
 

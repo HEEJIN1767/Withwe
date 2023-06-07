@@ -13,7 +13,7 @@
         android:layout_width="200dp"
         android:layout_height="100dp"
 
-        android:text="체크리스트 결과"></TextView>
+        android:text="체크리스트 결과"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_weight="1"
-            android:text="현재 상태는" ></TextView>
+            android:text="현재 상태는" />
 
         <TextView
             android:id="@+id/checklistSingleResult"
@@ -35,14 +35,14 @@
             android:textColor="#2196F3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="'없음'" ></TextView>
+            android:text="'없음'" />
 
         <TextView
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:gravity="center"
             android:layout_height="wrap_content"
-            android:text="입니다" ></TextView>
+            android:text="입니다" />
 
     </LinearLayout>
 

@@ -7,15 +7,22 @@
     android:orientation="vertical"
     tools:context=".LoginResponse">
 
-    <TextView
+    <ImageView
         android:id="@+id/together"
         android:layout_width="match_parent"
         android:layout_height="110dp"
-        android:text="WiWe"
-        android:background="#54bebb"
+        android:scaleType="fitCenter"
+
         android:layout_gravity="center"
         android:textAlignment="center"
+        android:src="@drawable/wiwe"
         android:textSize="80dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_gravity="center"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,13 +31,9 @@
         android:layout_marginTop="100dp"
         android:layout_weight="1"
         android:orientation="vertical">
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/black"
-            android:layout_gravity="center"/>
+
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="70dp"
             android:id="@+id/info"
             android:text="여성 정보"
@@ -39,30 +42,23 @@
             android:gravity="center"
             android:textColor="@color/black"
             android:textSize="30dp"
-            android:backgroundTint="@color/white"/>
+            android:background="@drawable/round_button" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/black"
-            android:layout_gravity="center"/>
+
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="70dp"
             android:id="@+id/hb"
             android:text="활동 추천"
+            android:layout_marginTop="20dp"
             android:layout_gravity="center"
             android:textAlignment="center"
             android:gravity="center"
             android:textColor="@color/black"
             android:textSize="30dp"
-            android:backgroundTint="@color/white"/>
+            android:background="@drawable/round_button" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/black"
-            android:layout_gravity="center"/>
+
 
 
     </LinearLayout>
@@ -89,7 +85,7 @@
 
         <View
             android:layout_width="1dp"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:background="@color/black"
             android:layout_gravity="center"/>
 

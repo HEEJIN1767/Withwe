@@ -4,135 +4,121 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context=".LoginResponse">
+    android:orientation="vertical"
+    tools:context=".WiWemain">
+
+
+
+    <ImageView
+        android:id="@+id/together"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:src="@drawable/wiwe"
+        android:textSize="80dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_gravity="center"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/together"
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:text="WiWe"
-            android:background="#54bebb"
+
+
+        <ImageButton
+            android:id="@+id/cklist"
+            android:layout_width="320dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
             android:layout_gravity="center"
-            android:textAlignment="center"
-            android:textSize="80dp"/>
+            android:contentDescription="하고 싶은 설명"
+            android:background="@drawable/round_button"
+            android:src="@drawable/checklist" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginTop="50dp"
+        <ImageButton
+            android:id="@+id/hb"
+            android:layout_width="320dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
             android:layout_gravity="center"
-            android:orientation="horizontal" >
+            android:background="@drawable/round_button"
+            android:contentDescription="하고 싶은 설명"
+            android:src="@drawable/contents"
+            android:scaleType="fitCenter" />
 
-            <ImageButton
-                android:id="@+id/cklist"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:padding="10dp"
-                android:backgroundTint="#e9ecef"
-                android:scaleType="fitCenter"
-                android:contentDescription="하고 싶은 설명"
-                android:layout_marginLeft="40dp"
-                android:background="@drawable/round_button"
-                android:src="@drawable/cklist" />
 
-            <ImageButton
-                android:id="@+id/hb"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:padding="10dp"
-                android:layout_marginLeft="70dp"
-                android:backgroundTint="#e9ecef"
-                android:background="@drawable/round_button"
-                android:contentDescription="하고 싶은 설명"
-                android:src="@drawable/hb"
-                android:scaleType="fitCenter" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+        <ImageButton
+            android:id="@+id/cal"
+            android:layout_width="320dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button"
+            android:contentDescription="하고 싶은 설명"
+            android:scaleType="fitCenter"
+            android:src="@drawable/calendar" />
+        <ImageButton
+            android:id="@+id/cm"
+            android:layout_width="320dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:contentDescription="하고 싶은 설명"
+            android:src="@drawable/community"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="4"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginTop="50dp"
-            android:layout_gravity="center_horizontal"
-            android:orientation="horizontal" >
+            android:background="@color/white"
+            android:contentDescription="하고 싶은 설명"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/homebtn" />
 
-            <ImageButton
-                android:id="@+id/cal"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:padding="10dp"
-                android:layout_marginLeft="40dp"
-                android:backgroundTint="#e9ecef"
-                android:background="@drawable/round_button"
-                android:contentDescription="하고 싶은 설명"
-                android:scaleType="fitCenter"
-                android:src="@drawable/cd" />
-            <ImageButton
-                android:id="@+id/cm"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:padding="10dp"
-                android:layout_marginLeft="70dp"
-                android:background="@drawable/round_button"
-                android:contentDescription="하고 싶은 설명"
-                android:backgroundTint="#e9ecef"
-                android:src="@drawable/cm"
-                android:scaleType="fitCenter" />
-        </LinearLayout>
 
-        </LinearLayout>
-        <LinearLayout
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/black"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/mypg"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="bottom"
-            android:layout_weight="4"
-            android:gravity="bottom"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:contentDescription="하고 싶은 설명"
-                android:padding="10dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/homebtn" />
-
-
-            <View
-                android:layout_width="1dp"
-                android:layout_height="40dp"
-                android:background="@color/black"
-                android:layout_gravity="center"/>
-
-            <ImageButton
-                android:id="@+id/mypg"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:contentDescription="하고 싶은 설명"
-                android:padding="10dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/mypage" />
-
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="하고 싶은 설명"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mypage" />
 
     </LinearLayout>
+
 </LinearLayout>
 
