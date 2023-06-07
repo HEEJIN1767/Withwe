@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import com.example.wiwe.Api.Request.Checklist1ChangeRequest
 import com.example.wiwe.Api.Request.Checklist1ChangeService
 import com.example.wiwe.Api.Request.Checklist2ChangeRequest
@@ -23,6 +24,11 @@ class Checklist2ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_checklist2_result)
+
+        //타이틀 숨기기
+        val actionBar: ActionBar?
+        actionBar = supportActionBar
+        actionBar?.hide()
 
 
         var checklistBResult = findViewById<Button>(R.id.btn_result_b)

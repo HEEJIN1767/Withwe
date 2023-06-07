@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AlertDialog
 import com.example.wiwe.Api.Request.*
 import com.example.wiwe.Api.Response.Checklist1ResultResponse
@@ -40,6 +41,13 @@ class ChecklistMainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityChecklistMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //타이틀 숨기기
+        val actionBar: ActionBar?
+        actionBar = supportActionBar
+        actionBar?.hide()
+
+
 
         checklistButton1 = findViewById<Button>(R.id.checklistButton1)
         checklistButton2 = findViewById(R.id.checklistButton2)

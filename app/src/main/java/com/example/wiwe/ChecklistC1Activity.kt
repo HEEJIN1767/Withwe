@@ -6,15 +6,22 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 
 class ChecklistC1Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_checklist_c1)
 
+        //타이틀 숨기기
+        val actionBar: ActionBar?
+        actionBar = supportActionBar
+        actionBar?.hide()
+
+
+
         var checklistC1Next = findViewById<Button>(R.id.btn3_next_1)
         var checklistNumber = findViewById<EditText>(R.id.number1)
-
 
 
 

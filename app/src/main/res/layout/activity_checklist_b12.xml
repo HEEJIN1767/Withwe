@@ -8,15 +8,21 @@
     tools:context=".ChecklistB12Activity">
 
 
-    <TextView
+    <ImageView
         android:id="@+id/together"
         android:layout_width="match_parent"
         android:layout_height="110dp"
-        android:text="WiWe"
-        android:background="#54bebb"
+        android:scaleType="fitCenter"
         android:layout_gravity="center"
         android:textAlignment="center"
+        android:src="@drawable/wiwe"
         android:textSize="80dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_gravity="center"/>
 
     <TextView
         android:id="@+id/check_number"

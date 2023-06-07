@@ -9,18 +9,24 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9ed1ab3-bad6-4c7f-94bf-1efbfa40b3c0" name="Changes" comment="hobby">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/Spiash.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/berry.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/cal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/checklist.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/community.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/contents.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/loading.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nut.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pum.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/wiwe.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_spiash.xml" afterDir="false" />
+    <list default="true" id="c9ed1ab3-bad6-4c7f-94bf-1efbfa40b3c0" name="Changes" comment="mainpage">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/almond.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/avocado.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bean.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/beann.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/berry1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/canned.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/egg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/fish.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/milk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mypage12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/nut1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/products.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pum1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/strawberry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/yogurt.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -29,51 +35,92 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/add.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/add.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/calendar.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/calendar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/homebtn.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/homebtn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/memolist2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/memolist2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/mypage.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mypage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/Checklist1ResultActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/Checklist1ResultActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/Checklist2ResultActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/Checklist2ResultActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/Checklist2ResultDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/Checklist2ResultDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/Checklist3ResultActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/Checklist3ResultActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/Checklist3ResultDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/Checklist3ResultDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA10Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA10Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA11Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA11Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA1Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA1Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA2Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA2Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA3Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA3Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA4Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA4Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA5Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA5Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA6Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA6Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA7Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA7Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA8Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA8Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA9Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistA9Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB10Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB10Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB11Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB11Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB12Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB12Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB13Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB13Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB1Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB1Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB2Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB2Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB30Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB30Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB4Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB4Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB5Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB5Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB6Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB6Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB7Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB7Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB8Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB8Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB9Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistB9Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistC1Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistC1Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistC2Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistC2Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistFinalResultActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistFinalResultActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistMainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistMainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistResultDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/ChecklistResultDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/Contents1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/wiwe/Contents1.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_calendar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_calendar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_chagne_memo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_chagne_memo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_change_community.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_change_community.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist1_result.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist1_result.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist2_result.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist2_result.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist3_result.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist3_result.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_a9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b30.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b30.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_b9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_c1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_c1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_c2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_c2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_checklist_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_contents1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_contents1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_contents_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_contents_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_cal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_cal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_deleteuser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_deleteuser.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_hobby_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_hobby_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_memo_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_memo_list.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_myboards.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_myboards.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_mypage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_mypage.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_myreview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_myreview.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_nickchange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_nickchange.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_one_hobby.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_one_hobby.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_onew_memo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_onew_memo.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_passchange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_passchange.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_readcommunity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_readcommunity.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_recyclerviewcommunity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_recyclerviewcommunity.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_searchcommunity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_searchcommunity.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_userinfochange.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_userinfochange.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_wi_wemain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_wi_wemain.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_writecommunity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_writecommunity.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/checklist_result_dialog1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/checklist_result_dialog1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_community.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_community.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_memo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_memo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_mycomment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_mycomment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_myreview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_myreview.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\hgim6\.android\avd\Pixel_2_API_33_1.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\hgim6\.android\avd\Pixel_XL_API_33.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -143,19 +190,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cidr.known.project.marker": "true",
-    "last_directory_selection": "C:/Users/hgim6/AndroidStudioProjects/WiWe3/app/src/main/res/drawable",
-    "last_opened_file_path": "C:/Users/hgim6/AndroidStudioProjects/WiWe3/app/src/main/res/drawable",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.rainbow.brackets"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/hgim6/AndroidStudioProjects/WiWe3/app/src/main/res/drawable&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hgim6/AndroidStudioProjects/WiWe3/app/src/main/res/drawable&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.rainbow.brackets&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="android.template.-2043509018">
       <recent name="com.example.wiwe" />
@@ -307,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685972925237</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="mainpage">
+      <created>1686148750446</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686148750446</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -326,6 +380,7 @@
     <MESSAGE value="community,calendar,myPage" />
     <MESSAGE value="contents" />
     <MESSAGE value="hobby" />
-    <option name="LAST_COMMIT_MESSAGE" value="hobby" />
+    <MESSAGE value="mainpage" />
+    <option name="LAST_COMMIT_MESSAGE" value="mainpage" />
   </component>
 </project>

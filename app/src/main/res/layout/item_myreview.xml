@@ -15,11 +15,11 @@
 
         <ImageView
             android:id="@+id/profile"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:contentDescription="하고 싶은 설명"
             android:scaleType="fitCenter"
-            android:src="@drawable/mypage" />
+            android:src="@drawable/mypage12" />
 
 
         <TextView

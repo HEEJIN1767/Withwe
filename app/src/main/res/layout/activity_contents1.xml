@@ -118,6 +118,7 @@
                     android:layout_height="1dp"
                     android:background="@color/black"
                     android:layout_gravity="center"/>
+
                 <LinearLayout
                     android:id="@+id/linearLayout1"
                     android:layout_width="match_parent"
@@ -173,7 +174,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="15dp"
-                            android:src="@drawable/alm" />
+                            android:src="@drawable/almond" />
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -281,7 +282,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="15dp"
-                            android:src="@drawable/beans" />
+                            android:src="@drawable/bean" />
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -391,7 +392,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="10dp"
-                            android:src="@drawable/pum"/>
+                            android:src="@drawable/pum1"/>
 
                         <ImageView
 
@@ -399,14 +400,14 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="15dp"
-                            android:src="@drawable/berry" />
+                            android:src="@drawable/berry1" />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="10dp"
-                            android:src="@drawable/nut"/>
+                            android:src="@drawable/nut1"/>
 
                     </LinearLayout>
 
@@ -510,7 +511,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="10dp"
-                            android:src="@drawable/du"/>
+                            android:src="@drawable/beann"/>
 
                         <ImageView
 
@@ -518,14 +519,14 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="15dp"
-                            android:src="@drawable/beans" />
+                            android:src="@drawable/avocado" />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="10dp"
-                            android:src="@drawable/bro"/>
+                            android:src="@drawable/pear"/>
 
                     </LinearLayout>
 
@@ -652,7 +653,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="10dp"
-                            android:src="@drawable/du"/>
+                            android:src="@drawable/egg"/>
 
                         <ImageView
 
@@ -660,14 +661,14 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="15dp"
-                            android:src="@drawable/beans" />
+                            android:src="@drawable/canned" />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="10dp"
-                            android:src="@drawable/bro"/>
+                            android:src="@drawable/yogurt"/>
 
                     </LinearLayout>
 
@@ -760,7 +761,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="10dp"
-                            android:src="@drawable/du"/>
+                            android:src="@drawable/strawberry"/>
 
                         <ImageView
 
@@ -768,14 +769,14 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="15dp"
-                            android:src="@drawable/beans" />
+                            android:src="@drawable/almond" />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="10dp"
-                            android:src="@drawable/bro"/>
+                            android:src="@drawable/sunfl"/>
 
                     </LinearLayout>
 
@@ -868,7 +869,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="10dp"
-                            android:src="@drawable/du"/>
+                            android:src="@drawable/fish"/>
 
                         <ImageView
 
@@ -876,14 +877,14 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="15dp"
-                            android:src="@drawable/beans" />
+                            android:src="@drawable/egg" />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="10dp"
-                            android:src="@drawable/bro"/>
+                            android:src="@drawable/milk"/>
 
                     </LinearLayout>
 
@@ -969,12 +970,6 @@
                         android:id="@+id/view_iv8"
                         android:orientation="horizontal">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:padding="10dp"
-                            android:src="@drawable/du"/>
 
                         <ImageView
 
@@ -982,14 +977,9 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="15dp"
-                            android:src="@drawable/beans" />
+                            android:src="@drawable/products" />
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:padding="10dp"
-                            android:src="@drawable/bro"/>
+
 
                     </LinearLayout>
 

@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.Window
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import com.example.wiwe.Api.Request.Checklist1ResultService
 import com.example.wiwe.Api.Request.Checklist2ResultService
 import com.example.wiwe.Api.Response.Checklist1ResultResponse
@@ -28,6 +29,13 @@ class ChecklistResultDialog : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(R.layout.activity_checklist_result_dialog)
+
+        //타이틀 숨기기
+        val actionBar: ActionBar?
+        actionBar = supportActionBar
+        actionBar?.hide()
+
+
 
         val checklistSingleResult = findViewById<TextView>(R.id.checklistSingleResult)
         val checklistSingleResultNumber = findViewById<TextView>(R.id.checklistNumber1)

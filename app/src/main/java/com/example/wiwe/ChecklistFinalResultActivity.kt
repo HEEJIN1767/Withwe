@@ -7,6 +7,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import com.example.wiwe.Api.Request.ChecklistFinalResultService
 import com.example.wiwe.Api.Response.ChecklistFinalResultResponse
 import com.example.wiwe.databinding.ActivityChecklistFinalResultBinding
@@ -28,6 +29,13 @@ class ChecklistFinalResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityChecklistFinalResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //타이틀 숨기기
+        val actionBar: ActionBar?
+        actionBar = supportActionBar
+        actionBar?.hide()
+
+
 
         val sharedPreferences = getSharedPreferences("token", MODE_PRIVATE)
         val jwt = sharedPreferences.getString("jwt", "")

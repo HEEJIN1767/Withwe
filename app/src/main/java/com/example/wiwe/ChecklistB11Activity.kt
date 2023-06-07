@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.RadioGroup
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 
 class ChecklistB11Activity : AppCompatActivity() {
 
@@ -13,6 +14,12 @@ class ChecklistB11Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_checklist_b11)
+
+        //타이틀 숨기기
+        val actionBar: ActionBar?
+        actionBar = supportActionBar
+        actionBar?.hide()
+
 
         var inIntent = intent
         var checklistB1Response = intent.getIntExtra("checklistB1",0)

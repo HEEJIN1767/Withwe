@@ -61,7 +61,7 @@
             android:background="#FFFFFF"
             android:scaleType="fitCenter"
             android:layout_gravity="center"
-            android:src="@drawable/mypage" />
+            android:src="@drawable/mypage12" />
 
         <LinearLayout
             android:layout_width="match_parent"

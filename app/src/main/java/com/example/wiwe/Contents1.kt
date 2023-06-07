@@ -14,8 +14,6 @@ class Contents1 : AppCompatActivity() {
 
     private lateinit var binding: ActivityContents1Binding
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityContents1Binding.inflate(layoutInflater)
@@ -55,11 +53,9 @@ class Contents1 : AppCompatActivity() {
                         binding.contentTv1c.setVisibility(View.GONE)
                         binding.contentTv1a.setText("-꾸준한 운동은 체중 관리 체력 향상 스트레스 감소 그리고 만성질환 예방에 도움이 된다.\n-주 2~3회, 하루 30분 이상의 중간 강도 운동이 권장되며, 걷기, 수영, 자전거 타기, 요가, 필라테스 등 다양한 운동을 선택할 수 있다.")
                         binding.contentTv1.setOnClickListener {
-                            binding.linearLayout1.setVisibility(View.VISIBLE)
-                          }
+                            binding.linearLayout1.setVisibility(View.VISIBLE) }
                         binding.cancel1.setOnClickListener {
-                            binding.linearLayout1.setVisibility(View.GONE)
-                           }
+                            binding.linearLayout1.setVisibility(View.GONE) }
 
                         binding.contentTv2.setText("2. 충분한 수면")
                         binding.contentTv2b.setVisibility(View.GONE)
