@@ -20,5 +20,5 @@ data class myboardsdata(
     var boardsId: Long,
     var title:String,
     var nickname: String,
-   // var boardsCreatedAt: String
+    var boardsDate: String
 )

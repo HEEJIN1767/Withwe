@@ -24,7 +24,7 @@
         android:id="@+id/item_title"
         android:layout_width="match_parent"
         android:textColor="#333333"
-        android:gravity="center"
+        android:gravity="left"
         android:layout_height="wrap_content"
         android:text="title" />
 

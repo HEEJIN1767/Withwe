@@ -31,7 +31,7 @@
         android:padding="10dp"
         android:textSize="20sp"
         android:textColor="@color/white"
-        android:background="#E6626565"
+        android:background="@color/teal_700"
         android:textStyle="bold"/>
 
     <TextView

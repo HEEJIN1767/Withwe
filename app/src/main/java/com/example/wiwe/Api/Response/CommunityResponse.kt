@@ -19,5 +19,5 @@ data class createboard(
     var boardsId: Long,
     var boardsTitle:String,
     var boardsContent: String,
-   // var boardsCreatedAt: String
+    var boardsDate: String
 )

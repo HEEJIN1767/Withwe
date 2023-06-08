@@ -133,8 +133,6 @@
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:textAlignment="center"
                         app:layout_constraintBottom_toTopOf="@id/content_tv"
                         app:layout_constraintLeft_toLeftOf="parent"
                         tools:text="내용1a" />
@@ -244,8 +242,6 @@
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:textAlignment="center"
                         app:layout_constraintBottom_toTopOf="@id/content_tv"
                         app:layout_constraintLeft_toLeftOf="parent"
                         tools:text="내용1a" />
@@ -361,8 +357,6 @@
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:textAlignment="center"
                         app:layout_constraintBottom_toTopOf="@id/content_tv"
                         app:layout_constraintLeft_toLeftOf="parent"
                         tools:text="내용3a" />
@@ -480,8 +474,6 @@
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:textAlignment="center"
                         app:layout_constraintBottom_toTopOf="@id/content_tv"
                         app:layout_constraintLeft_toLeftOf="parent"
                         tools:text="내용1a" />
@@ -622,8 +614,6 @@
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:textAlignment="center"
                         app:layout_constraintBottom_toTopOf="@id/content_tv"
                         app:layout_constraintLeft_toLeftOf="parent"
                         tools:text="내용1a" />
@@ -730,8 +720,6 @@
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:textAlignment="center"
                         app:layout_constraintBottom_toTopOf="@id/content_tv"
                         app:layout_constraintLeft_toLeftOf="parent"
                         tools:text="내용1a" />
@@ -838,8 +826,6 @@
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:textAlignment="center"
                         app:layout_constraintBottom_toTopOf="@id/content_tv"
                         app:layout_constraintLeft_toLeftOf="parent"
                         tools:text="내용1a" />
@@ -946,8 +932,6 @@
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:textAlignment="center"
                         app:layout_constraintBottom_toTopOf="@id/content_tv"
                         app:layout_constraintLeft_toLeftOf="parent"
                         tools:text="내용1a" />
@@ -1041,8 +1025,6 @@
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:textAlignment="center"
                         app:layout_constraintBottom_toTopOf="@id/content_tv"
                         app:layout_constraintLeft_toLeftOf="parent"
                         tools:text="내용1a" />
@@ -1117,8 +1099,6 @@
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:textAlignment="center"
                         app:layout_constraintBottom_toTopOf="@id/content_tv"
                         app:layout_constraintLeft_toLeftOf="parent"
                         tools:text="내용1a" />

@@ -24,5 +24,5 @@ data class listboard(
     var boardsId: Long,
     var title:String,
     var nickname:String,
-    var boardsCreatedAt: String
+    var boardsDate: String
 )

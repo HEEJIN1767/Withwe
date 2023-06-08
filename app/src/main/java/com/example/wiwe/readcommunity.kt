@@ -85,10 +85,11 @@ class readcommunity : AppCompatActivity() {
                         // 조회한 결과로 텍스트 설정
                         intent.putExtra("id", id)
 
-                        // binding.timeTv.setText(result?.result?.data?.createdAt.toString())
+                        binding.timeTv.setText(result?.result?.data?.boardsDate.toString())
                         binding.titleTv.setText(result?.result?.data?.boardsTitle)
                         binding.nickTv.setText(result?.result?.data?.boardsWriter)
                         binding.contentTv.setText(result?.result?.data?.boardsContent)
+
 
 
                     } else {

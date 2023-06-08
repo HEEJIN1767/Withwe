@@ -34,7 +34,7 @@ class RecyclerviewCommunityAdapter(val itemList: ArrayList<listboard>): Recycler
         holder.title.text = itemList[position].title
         holder.nickname.text = itemList[position].nickname
         holder.boardsId.text = itemList[position].boardsId.toString()
-        //holder.boardsCreatedAt.text = itemList[position].boardsCreatedAt
+        holder.boardsDate.text = itemList[position].boardsDate
     }
 
     //레이아웃 내 View 연결
@@ -43,7 +43,7 @@ class RecyclerviewCommunityAdapter(val itemList: ArrayList<listboard>): Recycler
         val title: TextView = itemView.findViewById(R.id.item_title)
         val nickname: TextView = itemView.findViewById(R.id.item_nickname)
         val boardsId: TextView = itemView.findViewById(R.id.item_number)
-        //val boardsCreatedAt: TextView = itemView.findViewById(R.id.item_time)
+        val boardsDate: TextView = itemView.findViewById(R.id.item_time)
     }
 
 

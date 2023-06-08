@@ -33,9 +33,10 @@ class MycommentAdapter(val itemList: ArrayList<myreviewdata>): RecyclerView.Adap
 
 
         holder.commentId.text = itemList[position].commentId.toString()
-        holder.commentContent.text = itemList[position].commentContent
+        holder.commentContent.text = itemList[position].commentContent //댓글 내용
+        holder.commentWriter.text = itemList[position].commentWriter //댓글 닉네임
         holder.boardsId.text = itemList[position].commentId.toString()
-        //holder.commentCreatedAt.text = itemList[position].commentCreatedAt.toString()
+        holder.commentCreatedAt.text = itemList[position].commentCreatedAt //댓글 작성시간
 
     }
 
@@ -43,8 +44,9 @@ class MycommentAdapter(val itemList: ArrayList<myreviewdata>): RecyclerView.Adap
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val commentId: TextView = itemView.findViewById(R.id.item_number)
         val commentContent: TextView = itemView.findViewById(R.id.item_review)
+        val commentWriter: TextView = itemView.findViewById(R.id.item_nickname)
         val boardsId: TextView = itemView.findViewById(R.id.item_number1)
-        //val commentCreatedAt: TextView = itemView.findViewById(R.id.item_time)
+        val commentCreatedAt: TextView = itemView.findViewById(R.id.item_time)
 
     }
 

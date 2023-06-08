@@ -142,7 +142,7 @@ class HobbyList : AppCompatActivity() {
                                 intent.putExtra("hobbyId", hobbyId)
                                 Log.e("hobbyId 확인", "${hobbyId}")
                                 startActivity(intent)
-                                finish()
+
                             }
                         })
                 }

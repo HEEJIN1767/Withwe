@@ -28,8 +28,8 @@ data class oneboard(
     @SerializedName("boardsTitle")
     var boardsTitle:String,
     @SerializedName("boardsContent")
-    var boardsContent: String
-    //@SerializedName("createdAt")
-   // var boardsCreatedAt: String
+    var boardsContent: String,
+    @SerializedName("boardsDate")
+    var boardsDate: String
 
 )
